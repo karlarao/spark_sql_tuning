@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="Spark%20shell%20-%20SQL_files/bootstrap.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20SQL_files/vis-timeline-graph2d.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20SQL_files/webui.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20SQL_files/timeline-view.css" type="text/css"><script src="Spark%20shell%20-%20SQL_files/sorttable.js"></script><script src="Spark%20shell%20-%20SQL_files/jquery-3.js"></script><script src="Spark%20shell%20-%20SQL_files/vis-timeline-graph2d.js"></script><script src="Spark%20shell%20-%20SQL_files/bootstrap-tooltip.js"></script><script src="Spark%20shell%20-%20SQL_files/initialize-tooltips.js"></script><script src="Spark%20shell%20-%20SQL_files/table.js"></script><script src="Spark%20shell%20-%20SQL_files/timeline-view.js"></script><script src="Spark%20shell%20-%20SQL_files/log-view.js"></script><script src="Spark%20shell%20-%20SQL_files/webui.js"></script><script>setUIRoot('')</script>
+        <script>setAppBasePath('')</script>
+        
+        
+        <link rel="shortcut icon" href="Spark%20shell%20-%20SQL_files/spark-logo-77x50px-hd.png">
+        <title>Spark shell - SQL</title>
+      </head>
+      <body>
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner">
+            <div class="brand">
+              <a href="http://localhost:4040/" class="brand">
+                <img src="Spark%20shell%20-%20SQL_files/spark-logo-77x50px-hd.png">
+                <span class="version">3.0.1</span>
+              </a>
+            </div>
+            <p class="navbar-text pull-right">
+              <strong title="Spark shell">Spark shell</strong> application UI
+            </p>
+            <ul class="nav"><li class="">
+        <a href="http://localhost:4040/jobs/">Jobs</a>
+      </li><li class="">
+        <a href="http://localhost:4040/stages/">Stages</a>
+      </li><li class="">
+        <a href="http://localhost:4040/storage/">Storage</a>
+      </li><li class="">
+        <a href="http://localhost:4040/environment/">Environment</a>
+      </li><li class="">
+        <a href="http://localhost:4040/executors/">Executors</a>
+      </li><li class="active">
+        <a href="http://localhost:4040/SQL/">SQL</a>
+      </li></ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+              <h3 style="vertical-align: bottom; display: inline-block;">
+                SQL
+                
+              </h3>
+            </div>
+          </div>
+          <div>
+        <ul class="unstyled">
+          
+          <li>
+                <a href="#completed"><strong>Completed Queries:</strong></a>
+                3
+              </li>
+          
+        </ul>
+      </div><span id="completed" class="collapse-aggregated-completedExecutions collapse-table" onclick="collapseTable('collapse-aggregated-completedExecutions',
+                'aggregated-completedExecutions')">
+            <h4>
+              <span class="collapse-table-arrow arrow-open"></span>
+              <a>Completed Queries (3)</a>
+            </h4>
+          </span><div class="aggregated-completedExecutions collapsible-table">
+              <div>
+        <div>
+      <div>
+        <form id="form-completed-table-top-page" method="get" action="/SQL/?&amp;completed.sort=ID&amp;completed.desc=true#completed" class="form-inline pull-right" style="margin-bottom: 0px;">
+          <input type="hidden" name="completed.sort" value="ID"><input type="hidden" name="completed.desc" value="true">
+          <label>1 Pages. Jump to</label>
+          <input type="text" name="completed.page" id="form-completed-table-top-page-no" value="1" class="span1">
+          <label>. Show </label>
+          <input type="text" id="form-completed-table-top-page-size" name="completed.pageSize" value="100" class="span1">
+          <label>items in a page.</label>
+
+          <button type="submit" class="btn">Go</button>
+        </form>
+      </div>
+      <div class="pagination" style="margin-bottom: 0px;">
+        <span style="float: left; padding-top: 4px; padding-right: 4px;">Page: </span>
+        <ul>
+          
+          
+          <li class="disabled"><a href="#">1</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+        <table class="table table-bordered table-condensed table-striped table-head-clickable table-cell-width-limited" id="completed-table">
+          <thead>
+      <tr><th>
+            <a href="http://localhost:4040/SQL/?&amp;completed.sort=ID&amp;completed.desc=false&amp;completed.pageSize=100#completed">
+              ID<span>
+              &nbsp;▾
+            </span>
+            </a>
+          </th><th>
+              <a href="http://localhost:4040/SQL/?&amp;completed.sort=Description&amp;completed.pageSize=100#completed">
+                Description
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/SQL/?&amp;completed.sort=Submitted&amp;completed.pageSize=100#completed">
+                Submitted
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/SQL/?&amp;completed.sort=Duration&amp;completed.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Time from query submission to completion
+                    (or if still executing, time since submission)">
+                    Duration
+                  </span>
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/SQL/?&amp;completed.sort=Job+IDs&amp;completed.pageSize=100#completed">
+                Job IDs
+              </a>
+            </th>
+    </tr></thead>
+          <tbody>
+            <tr>
+      <td>
+        2
+      </td>
+      <td>
+        <div><a href="http://localhost:4040/SQL/execution/?id=2" class="description-input">
+        show at &lt;console&gt;:26</a><span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        <pre>show at &lt;console&gt;:26<br><br>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line59.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line59.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line59.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line59.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line59.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line59.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line59.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line59.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line59.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line59.$eval$.$print(&lt;console&gt;:6)
+$line59.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div>
+      </td>
+      <td sorttable_customkey="1613679998833">
+        2021/02/18 20:26:38
+      </td>
+      <td sorttable_customkey="22259">
+        22 s
+      </td>
+      
+      <td>
+          <a href="http://localhost:4040/jobs/job/?id=7">[7]</a>
+        </td>
+      
+    </tr><tr>
+      <td>
+        1
+      </td>
+      <td>
+        <div><a href="http://localhost:4040/SQL/execution/?id=1" class="description-input">
+        show at &lt;console&gt;:26</a><span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        <pre>show at &lt;console&gt;:26<br><br>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line43.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line43.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line43.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line43.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line43.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line43.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line43.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line43.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line43.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line43.$eval$.$print(&lt;console&gt;:6)
+$line43.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div>
+      </td>
+      <td sorttable_customkey="1613651028652">
+        2021/02/18 12:23:48
+      </td>
+      <td sorttable_customkey="373">
+        0.4 s
+      </td>
+      
+      <td>
+          <a href="http://localhost:4040/jobs/job/?id=3">[3]</a><a href="http://localhost:4040/jobs/job/?id=4">[4]</a>
+        </td>
+      
+    </tr><tr>
+      <td>
+        0
+      </td>
+      <td>
+        <div><a href="http://localhost:4040/SQL/execution/?id=0" class="description-input">
+        show at &lt;console&gt;:26</a><span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        <pre>show at &lt;console&gt;:26<br><br>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line33.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line33.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line33.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line33.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line33.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line33.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line33.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line33.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line33.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line33.$eval$.$print(&lt;console&gt;:6)
+$line33.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div>
+      </td>
+      <td sorttable_customkey="1613649368401">
+        2021/02/18 11:56:08
+      </td>
+      <td sorttable_customkey="1820">
+        2 s
+      </td>
+      
+      <td>
+          <a href="http://localhost:4040/jobs/job/?id=1">[1]</a><a href="http://localhost:4040/jobs/job/?id=2">[2]</a>
+        </td>
+      
+    </tr>
+          </tbody>
+        </table>
+        <div>
+      <div>
+        <form id="form-completed-table-bottom-page" method="get" action="/SQL/?&amp;completed.sort=ID&amp;completed.desc=true#completed" class="form-inline pull-right" style="margin-bottom: 0px;">
+          <input type="hidden" name="completed.sort" value="ID"><input type="hidden" name="completed.desc" value="true">
+          <label>1 Pages. Jump to</label>
+          <input type="text" name="completed.page" id="form-completed-table-bottom-page-no" value="1" class="span1">
+          <label>. Show </label>
+          <input type="text" id="form-completed-table-bottom-page-size" name="completed.pageSize" value="100" class="span1">
+          <label>items in a page.</label>
+
+          <button type="submit" class="btn">Go</button>
+        </form>
+      </div>
+      <div class="pagination" style="margin-bottom: 0px;">
+        <span style="float: left; padding-top: 4px; padding-right: 4px;">Page: </span>
+        <ul>
+          
+          
+          <li class="disabled"><a href="#">1</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+      </div>
+            </div><script>
+        function clickDetail(details) {
+          details.parentNode.querySelector('.stage-details').classList.toggle('collapsed')
+        }
+      </script>
+        </div>
+      
+    </body></html>

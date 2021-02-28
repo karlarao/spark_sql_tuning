@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/bootstrap.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/vis-timeline-graph2d.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/webui.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/timeline-view.css" type="text/css"><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/sorttable.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/jquery-3.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/vis-timeline-graph2d.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/bootstrap-tooltip.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/initialize-tooltips.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/table.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/timeline-view.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/log-view.js"></script><script src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/webui.js"></script><script>setUIRoot('')</script>
+        <script>setAppBasePath('')</script>
+        
+        
+        <link rel="shortcut icon" href="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/spark-logo-77x50px-hd.png">
+        <title>Spark shell - Stages for All Jobs</title>
+      </head>
+      <body>
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner">
+            <div class="brand">
+              <a href="http://localhost:4040/" class="brand">
+                <img src="Spark%20shell%20-%20Stages%20for%20All%20Jobs_files/spark-logo-77x50px-hd.png">
+                <span class="version">3.0.1</span>
+              </a>
+            </div>
+            <p class="navbar-text pull-right">
+              <strong title="Spark shell">Spark shell</strong> application UI
+            </p>
+            <ul class="nav"><li class="">
+        <a href="http://localhost:4040/jobs/">Jobs</a>
+      </li><li class="active">
+        <a href="http://localhost:4040/stages/">Stages</a>
+      </li><li class="">
+        <a href="http://localhost:4040/storage/">Storage</a>
+      </li><li class="">
+        <a href="http://localhost:4040/environment/">Environment</a>
+      </li><li class="">
+        <a href="http://localhost:4040/executors/">Executors</a>
+      </li><li class="">
+        <a href="http://localhost:4040/SQL/">SQL</a>
+      </li></ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+              <h3 style="vertical-align: bottom; display: inline-block;">
+                Stages for All Jobs
+                
+              </h3>
+            </div>
+          </div>
+          <div>
+        <ul class="unstyled">
+          <li id="completed-summary">
+        <a href="#completed">
+          <strong>Completed Stages:</strong>
+        </a>
+        15
+      </li>
+        </ul>
+      </div><span id="completed" class="collapse-aggregated-allCompletedStages collapse-table" onclick="collapseTable('collapse-aggregated-allCompletedStages', 'aggregated-allCompletedStages')">
+      <h4>
+        <span class="collapse-table-arrow arrow-open"></span>
+        <a>Completed Stages (15)</a>
+      </h4>
+    </span><div class="aggregated-allCompletedStages collapsible-table">
+        <div>
+        <div>
+      <div>
+        <form id="form-completedStage-table-top-page" method="get" action="/stages/?&amp;completedStage.sort=Stage+Id&amp;completedStage.desc=true#completed" class="form-inline pull-right" style="margin-bottom: 0px;">
+          <input type="hidden" name="completedStage.sort" value="Stage Id"><input type="hidden" name="completedStage.desc" value="true">
+          <label>1 Pages. Jump to</label>
+          <input type="text" name="completedStage.page" id="form-completedStage-table-top-page-no" value="1" class="span1">
+          <label>. Show </label>
+          <input type="text" id="form-completedStage-table-top-page-size" name="completedStage.pageSize" value="100" class="span1">
+          <label>items in a page.</label>
+
+          <button type="submit" class="btn">Go</button>
+        </form>
+      </div>
+      <div class="pagination" style="margin-bottom: 0px;">
+        <span style="float: left; padding-top: 4px; padding-right: 4px;">Page: </span>
+        <ul>
+          
+          
+          <li class="disabled"><a href="#">1</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+        <table class="table table-bordered table-condensed table-striped table-head-clickable table-cell-width-limited" id="completedStage-table">
+          <thead><tr><th>
+            <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Stage+Id&amp;completedStage.desc=false&amp;completedStage.pageSize=100#completed">
+              Stage Id<span>
+              &nbsp;▾
+            </span>
+            </a>
+          </th><th>
+              <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Description&amp;completedStage.pageSize=100#completed">
+                Description
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Submitted&amp;completedStage.pageSize=100#completed">
+                Submitted
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Duration&amp;completedStage.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Elapsed time since the stage was submitted until execution completion of all its tasks.">
+              Duration
+            </span>
+              </a>
+            </th><th>
+              Tasks: Succeeded/Total
+            </th><th>
+              <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Input&amp;completedStage.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Bytes read from Hadoop or from Spark storage.">
+              Input
+            </span>
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Output&amp;completedStage.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Bytes written to Hadoop.">
+              Output
+            </span>
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Shuffle+Read&amp;completedStage.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Total shuffle bytes and records read (includes both data read locally and data read from
+       remote executors). ">
+              Shuffle Read
+            </span>
+              </a>
+            </th><th>
+              <a href="http://localhost:4040/stages/?&amp;completedStage.sort=Shuffle+Write&amp;completedStage.pageSize=100#completed">
+                <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Bytes and records written to disk in order to be read by a shuffle in a future stage.">
+              Shuffle Write
+            </span>
+              </a>
+            </th></tr></thead>
+          <tbody>
+            <tr id="stage-14-0">
+      <td>14</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=14&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line59.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line59.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line59.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line59.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line59.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line59.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line59.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line59.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line59.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line59.$eval$.$print(&lt;console&gt;:6)
+$line59.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 20:27:01
+        </td><td>28 ms</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td>11.5 KiB</td><td></td>
+    </tr><tr id="stage-13-0">
+      <td>13</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=13&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line59.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line59.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line59.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line59.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line59.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line59.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line59.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line59.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line59.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line59.$eval$.$print(&lt;console&gt;:6)
+$line59.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 20:26:54
+        </td><td>6 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        200/200
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td>104.1 MiB</td><td>11.5 KiB</td>
+    </tr><tr id="stage-12-0">
+      <td>12</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=12&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line59.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line59.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line59.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line59.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line59.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line59.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line59.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line59.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line59.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line59.$eval$.$print(&lt;console&gt;:6)
+$line59.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 20:26:49
+        </td><td>3 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        9/9
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td>50.0 MiB</td><td>52.1 MiB</td>
+    </tr><tr id="stage-11-0">
+      <td>11</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=11&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line59.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line59.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line59.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line59.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line59.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line59.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line59.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line59.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line59.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line59.$eval$.$print(&lt;console&gt;:6)
+$line59.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 20:26:45
+        </td><td>3 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        7/7
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td>49.4 MiB</td><td>52.0 MiB</td>
+    </tr><tr id="stage-10-0">
+      <td>10</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=10&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line59.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line59.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line59.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line59.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line59.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line59.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line59.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line59.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line59.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line59.$eval$.$print(&lt;console&gt;:6)
+$line59.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 20:26:39
+        </td><td>7 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td>49.4 MiB</td>
+    </tr><tr id="stage-9-0">
+      <td>9</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=9&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line59.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line59.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line59.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line59.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line59.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line59.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line59.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line59.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line59.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line59.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line59.$eval$.$print(&lt;console&gt;:6)
+$line59.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 20:26:39
+        </td><td>4 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td>50.0 MiB</td>
+    </tr><tr id="stage-8-0">
+      <td>8</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=8&amp;attempt=0" class="name-link">count at &lt;console&gt;:25</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.rdd.RDD.count(RDD.scala:1227)
+$line49.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:25)
+$line49.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:29)
+$line49.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:31)
+$line49.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:33)
+$line49.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:35)
+$line49.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:37)
+$line49.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:39)
+$line49.$read$$iw.&lt;init&gt;(&lt;console&gt;:41)
+$line49.$read.&lt;init&gt;(&lt;console&gt;:43)
+$line49.$read$.&lt;init&gt;(&lt;console&gt;:47)
+$line49.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line49.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line49.$eval$.$print(&lt;console&gt;:6)
+$line49.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 19:59:59
+        </td><td>22 ms</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td></td>
+    </tr><tr id="stage-7-0">
+      <td>7</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=7&amp;attempt=0" class="name-link">count at &lt;console&gt;:25</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.rdd.RDD.count(RDD.scala:1227)
+$line47.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:25)
+$line47.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:29)
+$line47.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:31)
+$line47.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:33)
+$line47.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:35)
+$line47.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:37)
+$line47.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:39)
+$line47.$read$$iw.&lt;init&gt;(&lt;console&gt;:41)
+$line47.$read.&lt;init&gt;(&lt;console&gt;:43)
+$line47.$read$.&lt;init&gt;(&lt;console&gt;:47)
+$line47.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line47.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line47.$eval$.$print(&lt;console&gt;:6)
+$line47.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 19:59:51
+        </td><td>60 ms</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td></td>
+    </tr><tr id="stage-6-0">
+      <td>6</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=6&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line43.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line43.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line43.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line43.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line43.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line43.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line43.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line43.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line43.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line43.$eval$.$print(&lt;console&gt;:6)
+$line43.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 12:23:48
+        </td><td>20 ms</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td>236.0 B</td><td></td>
+    </tr><tr id="stage-5-0">
+      <td>5</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=5&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line43.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line43.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line43.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line43.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line43.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line43.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line43.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line43.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line43.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line43.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line43.$eval$.$print(&lt;console&gt;:6)
+$line43.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 12:23:48
+        </td><td>53 ms</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td>236.0 B</td>
+    </tr><tr id="stage-4-0">
+      <td>4</td><td><div><span class="description-input">broadcast exchange (runId 6fe5263e-6831-4dcc-9104-48f0ab4b1403)</span>  <a href="http://localhost:4040/stages/stage/?id=4&amp;attempt=0" class="name-link">$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$1(SQLExecution.scala:182)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 12:23:48
+        </td><td>53 ms</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td></td>
+    </tr><tr id="stage-3-0">
+      <td>3</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=3&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line33.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line33.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line33.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line33.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line33.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line33.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line33.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line33.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line33.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line33.$eval$.$print(&lt;console&gt;:6)
+$line33.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 11:56:10
+        </td><td>0.1 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        1/1
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td>236.0 B</td><td></td>
+    </tr><tr id="stage-2-0">
+      <td>2</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=2&amp;attempt=0" class="name-link">show at &lt;console&gt;:26</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.Dataset.show(Dataset.scala:792)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:26)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line33.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line33.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line33.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line33.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line33.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line33.$read$$iw.&lt;init&gt;(&lt;console&gt;:42)
+$line33.$read.&lt;init&gt;(&lt;console&gt;:44)
+$line33.$read$.&lt;init&gt;(&lt;console&gt;:48)
+$line33.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line33.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line33.$eval$.$print(&lt;console&gt;:6)
+$line33.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 11:56:09
+        </td><td>0.2 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td>236.0 B</td>
+    </tr><tr id="stage-1-0">
+      <td>1</td><td><div><span class="description-input">broadcast exchange (runId a6c2aee7-d4b5-4ede-baaf-d6024c6bacc5)</span>  <a href="http://localhost:4040/stages/stage/?id=1&amp;attempt=0" class="name-link">$anonfun$withThreadLocalCaptured$1 at FutureTask.java:266</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.sql.execution.SQLExecution$.$anonfun$withThreadLocalCaptured$1(SQLExecution.scala:182)
+java.util.concurrent.FutureTask.run(FutureTask.java:266)
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+java.lang.Thread.run(Thread.java:748)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 11:56:09
+        </td><td>0.1 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td></td>
+    </tr><tr id="stage-0-0">
+      <td>0</td><td><div>  <a href="http://localhost:4040/stages/stage/?id=0&amp;attempt=0" class="name-link">count at &lt;console&gt;:24</a> <span onclick="this.parentNode.querySelector('.stage-details').classList.toggle('collapsed')" class="expand-details">
+        +details
+      </span><div class="stage-details collapsed">
+        
+        <pre>org.apache.spark.rdd.RDD.count(RDD.scala:1227)
+$line30.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:24)
+$line30.$read$$iw$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:28)
+$line30.$read$$iw$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:30)
+$line30.$read$$iw$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:32)
+$line30.$read$$iw$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:34)
+$line30.$read$$iw$$iw$$iw.&lt;init&gt;(&lt;console&gt;:36)
+$line30.$read$$iw$$iw.&lt;init&gt;(&lt;console&gt;:38)
+$line30.$read$$iw.&lt;init&gt;(&lt;console&gt;:40)
+$line30.$read.&lt;init&gt;(&lt;console&gt;:42)
+$line30.$read$.&lt;init&gt;(&lt;console&gt;:46)
+$line30.$read$.&lt;clinit&gt;(&lt;console&gt;)
+$line30.$eval$.$print$lzycompute(&lt;console&gt;:7)
+$line30.$eval$.$print(&lt;console&gt;:6)
+$line30.$eval.$print(&lt;console&gt;)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+scala.tools.nsc.interpreter.IMain$ReadEvalPrint.call(IMain.scala:745)</pre>
+      </div></div></td><td valign="middle">
+          2021/02/18 11:35:55
+        </td><td>0.9 s</td><td class="progress-cell">
+          <div class="progress">
+      <span style="text-align:center; position:absolute; width:100%; left:0;">
+        4/4
+        
+        
+        
+        
+      </span>
+      <div class="bar bar-completed" style="width: 100.0%"></div>
+      <div class="bar bar-running" style="width: 0.0%"></div>
+    </div>
+        </td><td></td><td></td><td></td><td></td>
+    </tr>
+          </tbody>
+        </table>
+        <div>
+      <div>
+        <form id="form-completedStage-table-bottom-page" method="get" action="/stages/?&amp;completedStage.sort=Stage+Id&amp;completedStage.desc=true#completed" class="form-inline pull-right" style="margin-bottom: 0px;">
+          <input type="hidden" name="completedStage.sort" value="Stage Id"><input type="hidden" name="completedStage.desc" value="true">
+          <label>1 Pages. Jump to</label>
+          <input type="text" name="completedStage.page" id="form-completedStage-table-bottom-page-no" value="1" class="span1">
+          <label>. Show </label>
+          <input type="text" id="form-completedStage-table-bottom-page-size" name="completedStage.pageSize" value="100" class="span1">
+          <label>items in a page.</label>
+
+          <button type="submit" class="btn">Go</button>
+        </form>
+      </div>
+      <div class="pagination" style="margin-bottom: 0px;">
+        <span style="float: left; padding-top: 4px; padding-right: 4px;">Page: </span>
+        <ul>
+          
+          
+          <li class="disabled"><a href="#">1</a></li>
+          
+          
+        </ul>
+      </div>
+    </div>
+      </div>
+      </div>
+        </div>
+      
+    </body></html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/bootstrap.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/vis-timeline-graph2d.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/webui.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/timeline-view.css" type="text/css"><script src="Spark%20shell%20-%20Executors_files/sorttable.js"></script><script src="Spark%20shell%20-%20Executors_files/jquery-3.js"></script><script src="Spark%20shell%20-%20Executors_files/vis-timeline-graph2d.js"></script><script src="Spark%20shell%20-%20Executors_files/bootstrap-tooltip.js"></script><script src="Spark%20shell%20-%20Executors_files/initialize-tooltips.js"></script><script src="Spark%20shell%20-%20Executors_files/table.js"></script><script src="Spark%20shell%20-%20Executors_files/timeline-view.js"></script><script src="Spark%20shell%20-%20Executors_files/log-view.js"></script><script src="Spark%20shell%20-%20Executors_files/webui.js"></script><script>setUIRoot('')</script>
+        <script>setAppBasePath('')</script>
+        
+        <link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/jquery.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/dataTables.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/jsonFormatter.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Executors_files/webui-dataTables.css" type="text/css"><script src="Spark%20shell%20-%20Executors_files/jquery.js"></script><script src="Spark%20shell%20-%20Executors_files/jquery_002.js"></script><script src="Spark%20shell%20-%20Executors_files/jquery_003.js"></script><script src="Spark%20shell%20-%20Executors_files/dataTables.js"></script><script src="Spark%20shell%20-%20Executors_files/jsonFormatter.js"></script><script src="Spark%20shell%20-%20Executors_files/jquery_004.js"></script>
+        <link rel="shortcut icon" href="Spark%20shell%20-%20Executors_files/spark-logo-77x50px-hd.png">
+        <title>Spark shell - Executors</title>
+      </head>
+      <body style="">
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner">
+            <div class="brand">
+              <a href="http://localhost:4040/" class="brand">
+                <img src="Spark%20shell%20-%20Executors_files/spark-logo-77x50px-hd.png">
+                <span class="version">3.0.1</span>
+              </a>
+            </div>
+            <p class="navbar-text pull-right">
+              <strong title="Spark shell">Spark shell</strong> application UI
+            </p>
+            <ul class="nav"><li class="">
+        <a href="http://localhost:4040/jobs/">Jobs</a>
+      </li><li class="">
+        <a href="http://localhost:4040/stages/">Stages</a>
+      </li><li class="">
+        <a href="http://localhost:4040/storage/">Storage</a>
+      </li><li class="">
+        <a href="http://localhost:4040/environment/">Environment</a>
+      </li><li class="active">
+        <a href="http://localhost:4040/executors/">Executors</a>
+      </li><li class="">
+        <a href="http://localhost:4040/SQL/">SQL</a>
+      </li></ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+              <h3 style="vertical-align: bottom; display: inline-block;">
+                Executors
+                
+              </h3>
+            </div>
+          </div>
+          <div>
+        <div id="active-executors" class="row-fluid">
+  <div id="showAdditionalMetrics"><div><a id="additionalMetrics"><span class="expand-input-rate-arrow arrow-open" id="arrowtoggle-optional-metrics"></span>Show Additional Metrics</a></div><div class="container-fluid container-fluid-div" id="toggle-metrics" style="display: block;" hidden=""><div><input type="checkbox" class="toggle-vis" id="select-all-box" checked="checked">Select All</div><div id="on_heap_memory" class="on-heap-memory-checkbox-div"><input type="checkbox" class="toggle-vis" data-sum-col-idx="3" data-exec-col-idx="5" checked="checked">On Heap Memory</div><div id="off_heap_memory" class="off-heap-memory-checkbox-div"><input type="checkbox" class="toggle-vis" data-sum-col-idx="4" data-exec-col-idx="6" checked="checked">Off Heap Memory</div><div id="extra_resources" class="resources-checkbox-div"><input type="checkbox" class="toggle-vis" data-sum-col-idx="" data-exec-col-idx="9" checked="checked">Resources</div></div></div>
+  <h4 class="title-table">Summary</h4>
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div id="summary-execs-table_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"></div><div class="col-sm-6"></div></div><div class="row"><div class="col-sm-12"><table id="summary-execs-table" class="table table-striped compact cell-border dataTable no-footer" role="grid" style="width: 2541px;">
+        <thead>
+        <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 75px;" aria-sort="ascending" aria-label=": activate to sort column descending"></th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 123px;" aria-label="RDD Blocks: activate to sort column ascending">RDD Blocks</th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 167px;" aria-label="Storage Memory
+        : activate to sort column ascending"><span data-toggle="tooltip" title="" data-original-title="Memory used / total available memory for storage of data like RDD partitions cached in memory.">Storage Memory</span>
+        </th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 254px;" aria-label="
+          On Heap Storage Memory
+        : activate to sort column ascending">
+          <span data-toggle="tooltip" title="" data-original-title="Memory used / total available memory for on heap storage of data like RDD partitions cached in memory.">On Heap Storage Memory</span>
+        </th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 255px;" aria-label="
+          Off Heap Storage Memory
+        : activate to sort column ascending">
+          <span data-toggle="tooltip" title="" data-original-title="Memory used / total available memory for off heap storage of data like RDD partitions cached in memory.">Off Heap Storage Memory</span>
+        </th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 105px;" aria-label="Disk Used: activate to sort column ascending">Disk Used</th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 65px;" aria-label="Cores: activate to sort column ascending">Cores</th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 127px;" aria-label="Active Tasks: activate to sort column ascending"><span data-toggle="tooltip" data-placement="top" title="" data-original-title="Number of tasks currently executing. Darker shading highlights executors with more active tasks.">Active Tasks</span></th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 125px;" aria-label="Failed Tasks: activate to sort column ascending"><span data-toggle="tooltip" data-placement="top" title="" data-original-title="Number of tasks that have failed on this executor. Darker shading highlights executors with a high proportion of failed tasks.">Failed Tasks</span></th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 160px;" aria-label="Complete Tasks: activate to sort column ascending">Complete Tasks</th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 114px;" aria-label="Total Tasks: activate to sort column ascending">Total Tasks</th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 204px;" aria-label="
+          Task Time (GC Time): activate to sort column ascending"><span data-toggle="tooltip" title="" data-original-title="Shaded red when garbage collection (GC) time is over 10% of task time">
+          Task Time (GC Time)</span></th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 58px;" aria-label="Input: activate to sort column ascending"><span data-toggle="tooltip" title="" data-original-title="Bytes and records read from Hadoop or from Spark storage.">Input</span></th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 129px;" aria-label="
+          Shuffle Read: activate to sort column ascending"><span data-toggle="tooltip" title="" data-original-title="Total shuffle bytes and records read (includes both data read locally and data read from remote executors).">
+          Shuffle Read</span></th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 130px;" aria-label="
+          
+            Shuffle Write
+        : activate to sort column ascending">
+          <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Bytes and records written to disk in order to be read by a shuffle in a future stage.">
+            Shuffle Write</span>
+        </th><th class="sorting" tabindex="0" aria-controls="summary-execs-table" rowspan="1" colspan="1" style="width: 114px;" aria-label="
+          
+            Blacklisted
+        : activate to sort column ascending">
+          <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Number of executors blacklisted by the scheduler due to task failures.">
+            Blacklisted</span>
+        </th></tr></thead>
+        <tbody>
+        <tr role="row" class="odd"><td style="font-weight: bold;" class="sorting_1">Active(1)</td><td>0</td><td>0.0 B / 366.3 MiB</td><td>0.0 B / 366.3 MiB</td><td>0.0 B / 0.0 B</td><td>0.0 B</td><td>4</td><td>0</td><td>0</td><td>255</td><td>255</td><td style="color: black;">1.5 min (7 s)</td><td>0.0 B</td><td>203.5 MiB</td><td>203.5 MiB</td><td>0</td></tr><tr role="row" class="even"><td style="font-weight: bold;" class="sorting_1">Dead(0)</td><td>0</td><td>0.0 B / 0.0 B</td><td>0.0 B / 0.0 B</td><td>0.0 B / 0.0 B</td><td>0.0 B</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0.0 ms (0.0 ms)</td><td>0.0 B</td><td>0.0 B</td><td>0.0 B</td><td>0</td></tr><tr role="row" class="odd"><td style="font-weight: bold;" class="sorting_1">Total(1)</td><td>0</td><td>0.0 B / 366.3 MiB</td><td>0.0 B / 366.3 MiB</td><td>0.0 B / 0.0 B</td><td>0.0 B</td><td>4</td><td>0</td><td>0</td><td>255</td><td>255</td><td style="color: black;">1.5 min (7 s)</td><td>0.0 B</td><td>203.5 MiB</td><td>203.5 MiB</td><td>0</td></tr></tbody>
+      </table></div></div><div class="row"><div class="col-sm-6"></div><div class="col-sm-6"></div></div></div>
+    </div>
+  </div>
+  <h4 class="title-table">Executors</h4>
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div id="active-executors-table_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"><div class="dataTables_length" id="active-executors-table_length"><label>Show <select name="active-executors-table_length" aria-controls="active-executors-table" class="form-control input-sm"><option value="20" selected="selected">20</option><option value="40">40</option><option value="60">60</option><option value="100">100</option><option value="-1">All</option></select> entries</label></div></div><div class="col-sm-6"><div id="active-executors-table_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="active-executors-table"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="active-executors-table" class="table table-striped compact cell-border dataTable no-footer" role="grid" aria-describedby="active-executors-table_info" style="width: 2573px;">
+        <thead>
+        <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 99px;" aria-sort="ascending" aria-label="Executor ID: activate to sort column descending">Executor ID</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 146px;" aria-label="Address: activate to sort column ascending">Address</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 56px;" aria-label="Status: activate to sort column ascending">Status</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 101px;" aria-label="RDD Blocks: activate to sort column ascending">RDD Blocks</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 138px;" aria-label="
+            
+              Storage Memory: activate to sort column ascending">
+            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Memory used / total available memory for storage of data like RDD partitions cached in memory.">
+              Storage Memory</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 213px;" aria-label="
+            
+              On Heap Storage Memory: activate to sort column ascending">
+            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Memory used / total available memory for on heap storage of data like RDD partitions cached in memory.">
+              On Heap Storage Memory</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 214px;" aria-label="
+            
+              Off Heap Storage Memory: activate to sort column ascending">
+            <span data-toggle="tooltip" title="" data-original-title="Memory used / total available memory for off heap storage of data like RDD partitions cached in memory.">
+              Off Heap Storage Memory</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 86px;" aria-label="Disk Used: activate to sort column ascending">Disk Used</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 52px;" aria-label="Cores: activate to sort column ascending">Cores</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 90px;" aria-label="Resources">Resources</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 105px;" aria-label="Active Tasks: activate to sort column ascending"><span data-toggle="tooltip" data-placement="top" title="" data-original-title="Number of tasks currently executing. Darker shading highlights executors with more active tasks.">Active Tasks</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 104px;" aria-label="Failed Tasks: activate to sort column ascending"><span data-toggle="tooltip" data-placement="top" title="" data-original-title="Number of tasks that have failed on this executor. Darker shading highlights executors with a high proportion of failed tasks.">Failed Tasks</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 133px;" aria-label="Complete Tasks: activate to sort column ascending">Complete Tasks</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 94px;" aria-label="Total Tasks: activate to sort column ascending">Total Tasks</th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 170px;" aria-label="
+            
+              Task Time (GC Time)
+            
+          : activate to sort column ascending">
+            <scan data-toggle="tooltip" data-placement="top" title="" data-original-title="Shaded red when garbage collection (GC) time is over 10% of task time">
+              Task Time (GC Time)
+            </scan>
+          </th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 46px;" aria-label="Input: activate to sort column ascending"><span data-toggle="tooltip" data-placement="top" title="" data-original-title="Bytes and records read from Hadoop or from Spark storage.">Input</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 107px;" aria-label="
+            
+              Shuffle Read: activate to sort column ascending">
+            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Total shuffle bytes and records read (includes both data read locally and data read from remote executors).">
+              Shuffle Read</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 107px;" aria-label="
+            
+              Shuffle Write: activate to sort column ascending">
+            <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Bytes and records written to disk in order to be read by a shuffle in a future stage.">
+              Shuffle Write</span></th><th class="sorting" tabindex="0" aria-controls="active-executors-table" rowspan="1" colspan="1" style="width: 113px;" aria-label="Thread Dump: activate to sort column ascending">Thread Dump</th></tr>
+        </thead>
+        <tbody>
+        <tr role="row" class="odd"><td class="sorting_1">driver</td><td>704a9920dffd:35041</td><td>Active</td><td>0</td><td>0.0 B / 366.3 MiB</td><td>0.0 B / 366.3 MiB</td><td>0.0 B / 0.0 B</td><td>0.0 B</td><td>4</td><td></td><td>0</td><td>0</td><td>255</td><td>255</td><td style="color: black;">1.5 min (7 s)</td><td>0.0 B</td><td>203.5 MiB</td><td>203.5 MiB</td><td><a href="http://localhost:4040/executors/threadDump/?executorId=driver">Thread Dump</a></td></tr></tbody>
+      </table></div></div><div class="row"><div class="col-sm-6"><div class="dataTables_info" id="active-executors-table_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div></div><div class="col-sm-6"><div class="dataTables_paginate paging_simple_numbers" id="active-executors-table_paginate"><ul class="pagination"><li class="paginate_button previous disabled" aria-controls="active-executors-table" tabindex="0" id="active-executors-table_previous"><a href="#">Previous</a></li><li class="paginate_button active" aria-controls="active-executors-table" tabindex="0"><a href="#">1</a></li><li class="paginate_button next disabled" aria-controls="active-executors-table" tabindex="0" id="active-executors-table_next"><a href="#">Next</a></li></ul></div></div></div></div>
+    </div>
+  </div>
+</div><script src="Spark%20shell%20-%20Executors_files/utils.js"></script><script src="Spark%20shell%20-%20Executors_files/executorspage.js"></script><script>setThreadDumpEnabled(true)</script>
+      </div>
+        </div>
+      
+    </body></html>

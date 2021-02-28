@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%202_files/bootstrap.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%202_files/vis-timeline-graph2d.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%202_files/webui.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%202_files/timeline-view.css" type="text/css"><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/sorttable.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/jquery-3.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/vis-timeline-graph2d.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/bootstrap-tooltip.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/initialize-tooltips.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/table.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/timeline-view.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/log-view.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/webui.js"></script><script>setUIRoot('')</script>
+        <script>setAppBasePath('')</script>
+        
+        
+        <link rel="shortcut icon" href="Spark%20shell%20-%20Details%20for%20Query%202_files/spark-logo-77x50px-hd.png">
+        <title>Spark shell - Details for Query 2</title>
+      </head>
+      <body>
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner">
+            <div class="brand">
+              <a href="http://localhost:4040/" class="brand">
+                <img src="Spark%20shell%20-%20Details%20for%20Query%202_files/spark-logo-77x50px-hd.png">
+                <span class="version">3.0.1</span>
+              </a>
+            </div>
+            <p class="navbar-text pull-right">
+              <strong title="Spark shell">Spark shell</strong> application UI
+            </p>
+            <ul class="nav"><li class="">
+        <a href="http://localhost:4040/jobs/">Jobs</a>
+      </li><li class="">
+        <a href="http://localhost:4040/stages/">Stages</a>
+      </li><li class="">
+        <a href="http://localhost:4040/storage/">Storage</a>
+      </li><li class="">
+        <a href="http://localhost:4040/environment/">Environment</a>
+      </li><li class="">
+        <a href="http://localhost:4040/executors/">Executors</a>
+      </li><li class="active">
+        <a href="http://localhost:4040/SQL/">SQL</a>
+      </li></ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+              <h3 style="vertical-align: bottom; display: inline-block;">
+                Details for Query 2
+                
+              </h3>
+            </div>
+          </div>
+          <div>
+          <ul class="unstyled">
+            <li>
+              <strong>Submitted Time: </strong>2021/02/18 20:26:38
+            </li>
+            <li>
+              <strong>Duration: </strong>22 s
+            </li>
+            
+            <li>
+            <strong>Succeeded Jobs: </strong>
+            <a href="http://localhost:4040/jobs/job/?id=7">7</a><span>&nbsp;</span>
+          </li>
+            
+          </ul>
+        </div><div>
+          <input type="checkbox" id="stageId-and-taskId-checkbox" checked="checked">
+          <span>Show the Stage ID and Task ID that corresponds to the max metric</span>
+        </div><div>
+      <div id="plan-viz-graph"><svg viewBox="-21 -76.53199768066406 854 2771.531997680664" width="854" height="2771.531997680664"><g><g class="output"><g class="clusters"><g class="cluster_1 cluster" name="WholeStageCodegen (7)\n \nduration: 7 ms" style="opacity: 1;"><rect width="253" height="189.68799591064453" x="279.5" y="2372.3120040893555" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(582.147668838501,2411.0000038146973)"><g transform="translate(-68.99166870117188,-19.343997955322266)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (7)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: 7 ms</tspan></text></g></g></g><g class="cluster_4 cluster" name="WholeStageCodegen (6)\n \nduration: total (min, med, max (stageId: taskId))\n17.3 s (33 ms, 77 ms, 341 ms (stage 13.0: task 54))" style="opacity: 1;"><rect width="662.5" height="515.5319976806641" x="69.75" y="1536.468002319336" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(842.550666809082,1587)"><g transform="translate(-135.56666564941406,-25.26599884033203)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (6)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: total (min, med, max <tspan class="stageId-and-taskId-metrics">(stageId: taskId)</tspan>)</tspan><tspan xml:space="preserve" dy="1em" x="1">17.3 s (33 ms, 77 ms, 341 ms <tspan class="stageId-and-taskId-metrics">(stage 13.0: task 54)</tspan>)</tspan></text></g></g></g><g class="cluster_8 cluster" name="WholeStageCodegen (3)\n \nduration: 0 ms" style="opacity: 1;"><rect width="406" height="245.68799591064453" x="-5" y="1286.3120040893555" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(450.647668838501,1325.0000038146973)"><g transform="translate(-68.99166870117188,-19.343997955322266)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (3)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: 0 ms</tspan></text></g></g></g><g class="cluster_11 cluster" name="WholeStageCodegen (2)\n \nduration: total (min, med, max (stageId: taskId))\n9.3 s (1.2 s, 1.3 s, 1.5 s (stage 11.0: task 39))" style="opacity: 1;"><rect width="354.6125030517578" height="397.53199768066406" x="34.758331298828125" y="540.4680023193359" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(489.6965026855469,591)"><g transform="translate(-125.59166717529297,-25.26599884033203)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (2)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: total (min, med, max <tspan class="stageId-and-taskId-metrics">(stageId: taskId)</tspan>)</tspan><tspan xml:space="preserve" dy="1em" x="1">9.3 s (1.2 s, 1.3 s, 1.5 s <tspan class="stageId-and-taskId-metrics">(stage 11.0: task 39)</tspan>)</tspan></text></g></g></g><g class="cluster_14 cluster" name="WholeStageCodegen (1)\n \nduration: total (min, med, max (stageId: taskId))\n15.7 s (3.9 s, 3.9 s, 3.9 s (stage 10.0: task 31))" style="opacity: 1;"><rect width="326.48333740234375" height="194.53199768066406" x="34.758331298828125" y="-60.53199768066406" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(461.5673370361328,-10)"><g transform="translate(-125.59166717529297,-25.26599884033203)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (1)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: total (min, med, max <tspan class="stageId-and-taskId-metrics">(stageId: taskId)</tspan>)</tspan><tspan xml:space="preserve" dy="1em" x="1">15.7 s (3.9 s, 3.9 s, 3.9 s <tspan class="stageId-and-taskId-metrics">(stage 10.0: task 31)</tspan>)</tspan></text></g></g></g><g class="cluster_16 cluster" name="WholeStageCodegen (5)\n \nduration: total (min, med, max (stageId: taskId))\n24.3 s (34 ms, 100 ms, 706 ms (stage 13.0: task 54))" style="opacity: 1;"><rect width="406" height="257.53199768066406" x="411" y="1274.468002319336" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(930.5923385620117,1325)"><g transform="translate(-138.85833740234375,-25.26599884033203)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (5)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: total (min, med, max <tspan class="stageId-and-taskId-metrics">(stageId: taskId)</tspan>)</tspan><tspan xml:space="preserve" dy="1em" x="1">24.3 s (34 ms, 100 ms, 706 ms <tspan class="stageId-and-taskId-metrics">(stage 13.0: task 54)</tspan>)</tspan></text></g></g></g><g class="cluster_20 cluster" name="WholeStageCodegen (4)\n \nduration: total (min, med, max (stageId: taskId))\n7.7 s (1.9 s, 1.9 s, 2.0 s (stage 9.0: task 34))" style="opacity: 1;"><rect width="353.1125030517578" height="397.53199768066406" x="424.12916564941406" y="138.46800231933594" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(877.5673370361328,189)"><g transform="translate(-125.59166717529297,-25.26599884033203)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (4)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: total (min, med, max <tspan class="stageId-and-taskId-metrics">(stageId: taskId)</tspan>)</tspan><tspan xml:space="preserve" dy="1em" x="1">7.7 s (1.9 s, 1.9 s, 2.0 s <tspan class="stageId-and-taskId-metrics">(stage 9.0: task 34)</tspan>)</tspan></text></g></g></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M406,2522L405.9999999999999,2527.833333333333C405.99999999999994,2533.6666666666665,405.99999999999994,2545.333333333333,405.9999999999999,2557C405.99999999999994,2568.6666666666665,405.99999999999994,2580.333333333333,405.9999999999999,2592C405.99999999999994,2603.6666666666665,405.99999999999994,2615.333333333333,405.9999999999999,2621.1666666666665L406,2627" marker-end="url(#arrowhead161)" style="fill: none;"></path><defs><marker id="arrowhead161" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M406,2351L405.9999999999999,2356.833333333333C405.99999999999994,2362.6666666666665,405.99999999999994,2374.333333333333,405.9999999999999,2386C405.99999999999994,2397.6666666666665,405.99999999999994,2409.333333333333,405.9999999999999,2421C405.99999999999994,2432.6666666666665,405.99999999999994,2444.333333333333,405.9999999999999,2450.1666666666665L406,2456" marker-end="url(#arrowhead162)" style="fill: none;"></path><defs><marker id="arrowhead162" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M406,2012L405.9999999999999,2017.833333333333C405.99999999999994,2023.6666666666665,405.99999999999994,2035.333333333333,405.9999999999999,2046.9999999999998C405.99999999999994,2058.6666666666665,405.99999999999994,2070.333333333333,405.9999999999999,2082C405.99999999999994,2093.6666666666665,405.99999999999994,2105.333333333333,405.9999999999999,2111.1666666666665L406,2117" marker-end="url(#arrowhead163)" style="fill: none;"></path><defs><marker id="arrowhead163" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M406,1820L405.9999999999999,1825.833333333333C405.99999999999994,1831.6666666666665,405.99999999999994,1843.333333333333,405.9999999999999,1854.9999999999998C405.99999999999994,1866.6666666666665,405.99999999999994,1878.3333333333333,405.9999999999999,1884.1666666666665L406,1890" marker-end="url(#arrowhead164)" style="fill: none;"></path><defs><marker id="arrowhead164" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M406,1691L405.9999999999999,1696.833333333333C405.99999999999994,1702.6666666666665,405.99999999999994,1714.333333333333,405.9999999999999,1725.9999999999998C405.99999999999994,1737.6666666666665,405.99999999999994,1749.3333333333333,405.9999999999999,1755.1666666666665L406,1761" marker-end="url(#arrowhead165)" style="fill: none;"></path><defs><marker id="arrowhead165" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M198,1492L198,1497.8333333333333C198,1503.6666666666665,198,1515.3333333333333,198,1527C198,1538.6666666666665,198,1550.3333333333333,198,1562C198,1573.6666666666665,198,1585.333333333333,216.8113695090439,1596.9999999999998C235.62273901808786,1608.6666666666665,273.2454780361757,1620.3333333333333,292.0568475452196,1626.1666666666665L310.8682170542636,1632" marker-end="url(#arrowhead166)" style="fill: none;"></path><defs><marker id="arrowhead166" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M198,1265L198,1270.8333333333333C198,1276.6666666666665,198,1288.3333333333333,198,1300C198,1311.6666666666665,198,1323.3333333333333,198,1335C198,1346.6666666666665,198,1358.3333333333333,198,1364.1666666666665L198,1370" marker-end="url(#arrowhead167)" style="fill: none;"></path><defs><marker id="arrowhead167" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M198,796.5L198,819.25C198,842,198,887.5,198,916.0833333333333C198,944.6666666666666,198,956.3333333333333,198,967.9999999999999C198,979.6666666666665,198,991.3333333333333,198,997.1666666666666L198,1003" marker-end="url(#arrowhead168)" style="fill: none;"></path><defs><marker id="arrowhead168" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M198,496L198,501.83333333333326C198,507.66666666666663,198,519.3333333333333,198,531C198,542.6666666666666,198,554.3333333333333,198,566C198,577.6666666666666,198,589.3333333333333,198,617.9166666666666C198,646.5,198,692,198,714.7499999999999L198,737.5" marker-end="url(#arrowhead169)" style="fill: none;"></path><defs><marker id="arrowhead169" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M198,94L198,99.83333333333333C198,105.66666666666666,198,117.33333333333333,198,129C198,140.66666666666666,198,152.33333333333331,198,163.99999999999997C198,175.66666666666666,198,187.33333333333331,198,199C198,210.66666666666666,198,222.33333333333331,198,228.16666666666666L198,234" marker-end="url(#arrowhead170)" style="fill: none;"></path><defs><marker id="arrowhead170" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M614,1492L614,1497.8333333333333C614,1503.6666666666665,614,1515.3333333333333,614,1527C614,1538.6666666666665,614,1550.3333333333333,614,1562C614,1573.6666666666665,614,1585.333333333333,595.188630490956,1596.9999999999998C576.3772609819121,1608.6666666666665,538.7545219638242,1620.3333333333333,519.9431524547804,1626.1666666666665L501.1317829457364,1632" marker-end="url(#arrowhead171)" style="fill: none;"></path><defs><marker id="arrowhead171" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M614,1265L614,1270.8333333333333C614,1276.6666666666665,614,1288.3333333333333,614,1300C614,1311.6666666666665,614,1323.3333333333333,614,1335C614,1346.6666666666665,614,1358.3333333333333,614,1364.1666666666665L614,1370" marker-end="url(#arrowhead172)" style="fill: none;"></path><defs><marker id="arrowhead172" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M614,898L614,903.8333333333333C614,909.6666666666666,614,921.3333333333333,614,933C614,944.6666666666666,614,956.3333333333333,614,967.9999999999999C614,979.6666666666665,614,991.3333333333333,614,997.1666666666666L614,1003" marker-end="url(#arrowhead173)" style="fill: none;"></path><defs><marker id="arrowhead173" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M614,394.5L614,417.25C614,440,614,485.5,614,514.0833333333334C614,542.6666666666666,614,554.3333333333333,614,566C614,577.6666666666666,614,589.3333333333333,614,601C614,612.6666666666666,614,624.3333333333333,614,630.1666666666666L614,636" marker-end="url(#arrowhead174)" style="fill: none;"></path><defs><marker id="arrowhead174" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g></g><g class="nodes"><g class="node_0 node" name="&lt;br&gt;&lt;b&gt;CollectLimit&lt;/b&gt;&lt;br&gt;&lt;br&gt;" style="opacity: 1;" transform="translate(406,2653)"><rect rx="5" ry="5" x="-39" y="-26" width="78" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34,-21)"><foreignObject width="68" height="42"><div style="display: inline-block; white-space: nowrap;"><br><b>CollectLimit</b><br><br></div></foreignObject></g></g></g><g class="node_2 node" name="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;time in aggregation build: 7 ms&lt;br&gt;number of output rows: 1" style="opacity: 1;" transform="translate(406,2489)" data-original-title="" title=""><rect rx="5" ry="5" x="-86.5" y="-33" width="173" height="66"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-81.5,-28)"><foreignObject width="163" height="56"><div style="display: inline-block; white-space: nowrap;"><b>HashAggregate</b><br><br>time in aggregation build: 7 ms<br>number of output rows: 1</div></foreignObject></g></g><g></g></g><g class="node_3 node" name="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records written: 200&lt;br&gt;shuffle write time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;204 ms (0 ms, 0 ms, 16 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 110)&lt;/span&gt;)&lt;br&gt;records read: 200&lt;br&gt;local bytes read: 11.5 KiB&lt;br&gt;fetch wait time: 0 ms&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks read: 200&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;3.1 KiB (16.0 B, 16.0 B, 16.0 B &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;11.5 KiB (59.0 B, 59.0 B, 59.0 B &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)" style="opacity: 1;" transform="translate(406,2234)"><rect rx="5" ry="5" x="-159.5" y="-117" width="319" height="234"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-154.5,-112)"><foreignObject width="309" height="224"><div style="display: inline-block; white-space: nowrap;"><b>Exchange</b><br><br>shuffle records written: 200<br>shuffle write time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>204 ms (0 ms, 0 ms, 16 ms <span class="stageId-and-taskId-metrics">(stage 13.0: task 110)</span>)<br>records read: 200<br>local bytes read: 11.5 KiB<br>fetch wait time: 0 ms<br>remote bytes read: 0.0 B<br>local blocks read: 200<br>remote blocks read: 0<br>data size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>3.1 KiB (16.0 B, 16.0 B, 16.0 B <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)<br>remote bytes read to disk: 0.0 B<br>shuffle bytes written total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>11.5 KiB (59.0 B, 59.0 B, 59.0 B <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)</div></foreignObject></g></g></g><g class="node_5 node" name="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;spill size: 0.0 B&lt;br&gt;time in aggregation build total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;17.1 s (32 ms, 77 ms, 333 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 54)&lt;/span&gt;)&lt;br&gt;peak memory: 0.0 B&lt;br&gt;number of output rows: 200&lt;br&gt;avg hash probe bucket list iters: 0" style="opacity: 1;" transform="translate(406,1951)"><rect rx="5" ry="5" x="-171.5" y="-61" width="343" height="122"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-166.5,-56)"><foreignObject width="333" height="112"><div style="display: inline-block; white-space: nowrap;"><b>HashAggregate</b><br><br>spill size: 0.0 B<br>time in aggregation build total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>17.1 s (32 ms, 77 ms, 333 ms <span class="stageId-and-taskId-metrics">(stage 13.0: task 54)</span>)<br>peak memory: 0.0 B<br>number of output rows: 200<br>avg hash probe bucket list iters: 0</div></foreignObject></g></g><g></g></g><g class="node_6 node" name="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;" style="opacity: 1;" transform="translate(406,1790.5)"><rect rx="5" ry="5" x="-25.5" y="-26" width="51" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-20.5,-21)"><foreignObject width="41" height="42"><div style="display: inline-block; white-space: nowrap;"><br><b>Project</b><br><br></div></foreignObject></g></g><g></g></g><g class="node_7 node" name="&lt;b&gt;SortMergeJoin&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output rows: 3,333,333" style="opacity: 1;" transform="translate(406,1661.5)"><rect rx="5" ry="5" x="-95" y="-26" width="190" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-90,-21)"><foreignObject width="180" height="42"><div style="display: inline-block; white-space: nowrap;"><b>SortMergeJoin</b><br><br>number of output rows: 3,333,333</div></foreignObject></g></g><g></g></g><g class="node_9 node" name="&lt;b&gt;Sort&lt;/b&gt;&lt;br&gt;&lt;br&gt;sort time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;728 ms (1 ms, 2 ms, 54 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)&lt;br&gt;peak memory total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;1200.0 MiB (6.0 MiB, 6.0 MiB, 6.0 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)&lt;br&gt;spill size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;0.0 B (0.0 B, 0.0 B, 0.0 B &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)" style="opacity: 1;" transform="translate(198,1431)"><rect rx="5" ry="5" x="-163" y="-61" width="326" height="122"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-158,-56)"><foreignObject width="316" height="112"><div style="display: inline-block; white-space: nowrap;"><b>Sort</b><br><br>sort time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>728 ms (1 ms, 2 ms, 54 ms <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)<br>peak memory total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>1200.0 MiB (6.0 MiB, 6.0 MiB, 6.0 MiB <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)<br>spill size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>0.0 B (0.0 B, 0.0 B, 0.0 B <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)</div></foreignObject></g></g><g></g></g><g class="node_10 node" name="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records written: 9,999,999&lt;br&gt;shuffle write time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;1.6 s (97 ms, 253 ms, 312 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 11.0: task 40)&lt;/span&gt;)&lt;br&gt;records read: 9,999,999&lt;br&gt;local bytes read total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;52.0 MiB (262.4 KiB, 266.4 KiB, 270.1 KiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 112)&lt;/span&gt;)&lt;br&gt;fetch wait time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;0 ms (0 ms, 0 ms, 0 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks read: 1,400&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;152.6 MiB (21.8 MiB, 21.8 MiB, 21.8 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 11.0: task 41)&lt;/span&gt;)&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;52.0 MiB (7.4 MiB, 7.4 MiB, 7.4 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 11.0: task 44)&lt;/span&gt;)" style="opacity: 1;" transform="translate(198,1134)"><rect rx="5" ry="5" x="-176" y="-131" width="352" height="262"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-171,-126)"><foreignObject width="342" height="252"><div style="display: inline-block; white-space: nowrap;"><b>Exchange</b><br><br>shuffle records written: 9,999,999<br>shuffle write time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>1.6 s (97 ms, 253 ms, 312 ms <span class="stageId-and-taskId-metrics">(stage 11.0: task 40)</span>)<br>records read: 9,999,999<br>local bytes read total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>52.0 MiB (262.4 KiB, 266.4 KiB, 270.1 KiB <span class="stageId-and-taskId-metrics">(stage 13.0: task 112)</span>)<br>fetch wait time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>0 ms (0 ms, 0 ms, 0 ms <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)<br>remote bytes read: 0.0 B<br>local blocks read: 1,400<br>remote blocks read: 0<br>data size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>152.6 MiB (21.8 MiB, 21.8 MiB, 21.8 MiB <span class="stageId-and-taskId-metrics">(stage 11.0: task 41)</span>)<br>remote bytes read to disk: 0.0 B<br>shuffle bytes written total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>52.0 MiB (7.4 MiB, 7.4 MiB, 7.4 MiB <span class="stageId-and-taskId-metrics">(stage 11.0: task 44)</span>)</div></foreignObject></g></g></g><g class="node_12 node" name="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;" style="opacity: 1;" transform="translate(198,767)"><rect rx="5" ry="5" x="-25.5" y="-26" width="51" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-20.5,-21)"><foreignObject width="41" height="42"><div style="display: inline-block; white-space: nowrap;"><br><b>Project</b><br><br></div></foreignObject></g></g><g></g></g><g class="node_13 node" name="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records written: 9,999,999&lt;br&gt;shuffle write time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;563 ms (115 ms, 150 ms, 153 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 10.0: task 32)&lt;/span&gt;)&lt;br&gt;records read: 9,999,999&lt;br&gt;local bytes read total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;49.4 MiB (7.1 MiB, 7.1 MiB, 7.1 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 11.0: task 38)&lt;/span&gt;)&lt;br&gt;fetch wait time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;0 ms (0 ms, 0 ms, 0 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 11.0: task 41)&lt;/span&gt;)&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks read: 28&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;152.6 MiB (38.1 MiB, 38.1 MiB, 38.1 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 10.0: task 33)&lt;/span&gt;)&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;49.4 MiB (12.2 MiB, 12.3 MiB, 12.6 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 10.0: task 30)&lt;/span&gt;)" style="opacity: 1;" transform="translate(198,365)"><rect rx="5" ry="5" x="-169.5" y="-131" width="339" height="262"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-164.5,-126)"><foreignObject width="329" height="252"><div style="display: inline-block; white-space: nowrap;"><b>Exchange</b><br><br>shuffle records written: 9,999,999<br>shuffle write time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>563 ms (115 ms, 150 ms, 153 ms <span class="stageId-and-taskId-metrics">(stage 10.0: task 32)</span>)<br>records read: 9,999,999<br>local bytes read total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>49.4 MiB (7.1 MiB, 7.1 MiB, 7.1 MiB <span class="stageId-and-taskId-metrics">(stage 11.0: task 38)</span>)<br>fetch wait time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>0 ms (0 ms, 0 ms, 0 ms <span class="stageId-and-taskId-metrics">(stage 11.0: task 41)</span>)<br>remote bytes read: 0.0 B<br>local blocks read: 28<br>remote blocks read: 0<br>data size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>152.6 MiB (38.1 MiB, 38.1 MiB, 38.1 MiB <span class="stageId-and-taskId-metrics">(stage 10.0: task 33)</span>)<br>remote bytes read to disk: 0.0 B<br>shuffle bytes written total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>49.4 MiB (12.2 MiB, 12.3 MiB, 12.6 MiB <span class="stageId-and-taskId-metrics">(stage 10.0: task 30)</span>)</div></foreignObject></g></g></g><g class="node_15 node" name="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output rows: 9,999,999" style="opacity: 1;" transform="translate(198,64.5)"><rect rx="5" ry="5" x="-95" y="-26" width="190" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-90,-21)"><foreignObject width="180" height="42"><div style="display: inline-block; white-space: nowrap;"><b>Range</b><br><br>number of output rows: 9,999,999</div></foreignObject></g></g><g></g></g><g class="node_17 node" name="&lt;b&gt;Sort&lt;/b&gt;&lt;br&gt;&lt;br&gt;sort time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;530 ms (1 ms, 2 ms, 27 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 134)&lt;/span&gt;)&lt;br&gt;peak memory total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;1200.0 MiB (6.0 MiB, 6.0 MiB, 6.0 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)&lt;br&gt;spill size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;0.0 B (0.0 B, 0.0 B, 0.0 B &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 55)&lt;/span&gt;)" style="opacity: 1;" transform="translate(614,1431)"><rect rx="5" ry="5" x="-163" y="-61" width="326" height="122"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-158,-56)"><foreignObject width="316" height="112"><div style="display: inline-block; white-space: nowrap;"><b>Sort</b><br><br>sort time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>530 ms (1 ms, 2 ms, 27 ms <span class="stageId-and-taskId-metrics">(stage 13.0: task 134)</span>)<br>peak memory total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>1200.0 MiB (6.0 MiB, 6.0 MiB, 6.0 MiB <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)<br>spill size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>0.0 B (0.0 B, 0.0 B, 0.0 B <span class="stageId-and-taskId-metrics">(stage 13.0: task 55)</span>)</div></foreignObject></g></g><g></g></g><g class="node_18 node" name="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records written: 10,000,000&lt;br&gt;shuffle write time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;1.1 s (59 ms, 116 ms, 238 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 12.0: task 45)&lt;/span&gt;)&lt;br&gt;records read: 10,000,000&lt;br&gt;local bytes read total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;52.1 MiB (261.6 KiB, 266.9 KiB, 271.0 KiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 243)&lt;/span&gt;)&lt;br&gt;fetch wait time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;9 ms (0 ms, 0 ms, 9 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 13.0: task 88)&lt;/span&gt;)&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks read: 1,800&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;152.6 MiB (17.0 MiB, 17.0 MiB, 17.0 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 12.0: task 45)&lt;/span&gt;)&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;52.1 MiB (5.8 MiB, 5.8 MiB, 5.8 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 12.0: task 46)&lt;/span&gt;)" style="opacity: 1;" transform="translate(614,1134)"><rect rx="5" ry="5" x="-176" y="-131" width="352" height="262"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-171,-126)"><foreignObject width="342" height="252"><div style="display: inline-block; white-space: nowrap;"><b>Exchange</b><br><br>shuffle records written: 10,000,000<br>shuffle write time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>1.1 s (59 ms, 116 ms, 238 ms <span class="stageId-and-taskId-metrics">(stage 12.0: task 45)</span>)<br>records read: 10,000,000<br>local bytes read total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>52.1 MiB (261.6 KiB, 266.9 KiB, 271.0 KiB <span class="stageId-and-taskId-metrics">(stage 13.0: task 243)</span>)<br>fetch wait time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>9 ms (0 ms, 0 ms, 9 ms <span class="stageId-and-taskId-metrics">(stage 13.0: task 88)</span>)<br>remote bytes read: 0.0 B<br>local blocks read: 1,800<br>remote blocks read: 0<br>data size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>152.6 MiB (17.0 MiB, 17.0 MiB, 17.0 MiB <span class="stageId-and-taskId-metrics">(stage 12.0: task 45)</span>)<br>remote bytes read to disk: 0.0 B<br>shuffle bytes written total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>52.1 MiB (5.8 MiB, 5.8 MiB, 5.8 MiB <span class="stageId-and-taskId-metrics">(stage 12.0: task 46)</span>)</div></foreignObject></g></g></g><g class="node_19 node" name="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records written: 10,000,000&lt;br&gt;shuffle write time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;494 ms (104 ms, 127 ms, 140 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 9.0: task 34)&lt;/span&gt;)&lt;br&gt;records read: 10,000,000&lt;br&gt;local bytes read total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;50.0 MiB (5.5 MiB, 5.6 MiB, 5.6 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 12.0: task 48)&lt;/span&gt;)&lt;br&gt;fetch wait time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;0 ms (0 ms, 0 ms, 0 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 12.0: task 45)&lt;/span&gt;)&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks read: 36&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;152.6 MiB (38.1 MiB, 38.1 MiB, 38.1 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 9.0: task 36)&lt;/span&gt;)&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;50.0 MiB (12.3 MiB, 12.5 MiB, 12.7 MiB &lt;span class='stageId-and-taskId-metrics'&gt;(stage 9.0: task 34)&lt;/span&gt;)" style="opacity: 1;" transform="translate(614,767)"><rect rx="5" ry="5" x="-166.5" y="-131" width="333" height="262"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-161.5,-126)"><foreignObject width="323" height="252"><div style="display: inline-block; white-space: nowrap;"><b>Exchange</b><br><br>shuffle records written: 10,000,000<br>shuffle write time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>494 ms (104 ms, 127 ms, 140 ms <span class="stageId-and-taskId-metrics">(stage 9.0: task 34)</span>)<br>records read: 10,000,000<br>local bytes read total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>50.0 MiB (5.5 MiB, 5.6 MiB, 5.6 MiB <span class="stageId-and-taskId-metrics">(stage 12.0: task 48)</span>)<br>fetch wait time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>0 ms (0 ms, 0 ms, 0 ms <span class="stageId-and-taskId-metrics">(stage 12.0: task 45)</span>)<br>remote bytes read: 0.0 B<br>local blocks read: 36<br>remote blocks read: 0<br>data size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>152.6 MiB (38.1 MiB, 38.1 MiB, 38.1 MiB <span class="stageId-and-taskId-metrics">(stage 9.0: task 36)</span>)<br>remote bytes read to disk: 0.0 B<br>shuffle bytes written total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>50.0 MiB (12.3 MiB, 12.5 MiB, 12.7 MiB <span class="stageId-and-taskId-metrics">(stage 9.0: task 34)</span>)</div></foreignObject></g></g></g><g class="node_21 node" name="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output rows: 10,000,000" style="opacity: 1;" transform="translate(614,365)"><rect rx="5" ry="5" x="-98.5" y="-26" width="197" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-93.5,-21)"><foreignObject width="187" height="42"><div style="display: inline-block; white-space: nowrap;"><b>Range</b><br><br>number of output rows: 10,000,000</div></foreignObject></g></g><g></g></g></g></g></g></svg></div>
+      <div id="plan-viz-metadata" style="display:none">
+        <div class="dot-file">
+          digraph G {
+  0 [labelType="html" 
+label="&lt;br&gt;&lt;b&gt;CollectLimit&lt;/b&gt;&lt;br&gt;&lt;br&gt;"];
+
+  subgraph cluster1 {
+    isCluster="true";
+    label="WholeStageCodegen (7)\n \nduration: 7 ms";
+      2 [labelType="html" 
+label="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;time in 
+aggregation build: 7 ms&lt;br&gt;number of output rows: 1"];
+  }
+     
+  3 [labelType="html" 
+label="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records 
+written: 200&lt;br&gt;shuffle write time total (min, med, max (stageId: 
+taskId))&lt;br&gt;204 ms (0 ms, 0 ms, 16 ms (stage 13.0: task 
+110))&lt;br&gt;records read: 200&lt;br&gt;local bytes read: 11.5 
+KiB&lt;br&gt;fetch wait time: 0 ms&lt;br&gt;remote bytes read: 0.0 
+B&lt;br&gt;local blocks read: 200&lt;br&gt;remote blocks read: 
+0&lt;br&gt;data size total (min, med, max (stageId: 
+taskId))&lt;br&gt;3.1 KiB (16.0 B, 16.0 B, 16.0 B (stage 13.0: task 
+55))&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes 
+written total (min, med, max (stageId: taskId))&lt;br&gt;11.5 KiB (59.0 
+B, 59.0 B, 59.0 B (stage 13.0: task 55))"];
+
+  subgraph cluster4 {
+    isCluster="true";
+    label="WholeStageCodegen (6)\n \nduration: total (min, med, max 
+(stageId: taskId))\n17.3 s (33 ms, 77 ms, 341 ms (stage 13.0: task 
+54))";
+      5 [labelType="html" 
+label="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;spill size: 
+0.0 B&lt;br&gt;time in aggregation build total (min, med, max (stageId: 
+taskId))&lt;br&gt;17.1 s (32 ms, 77 ms, 333 ms (stage 13.0: task 
+54))&lt;br&gt;peak memory: 0.0 B&lt;br&gt;number of output rows: 
+200&lt;br&gt;avg hash probe bucket list iters: 0"];    
+  6 [labelType="html" 
+label="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;"];    
+  7 [labelType="html" 
+label="&lt;b&gt;SortMergeJoin&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of 
+output rows: 3,333,333"];
+  }
+     
+
+  subgraph cluster8 {
+    isCluster="true";
+    label="WholeStageCodegen (3)\n \nduration: 0 ms";
+      9 [labelType="html" 
+label="&lt;b&gt;Sort&lt;/b&gt;&lt;br&gt;&lt;br&gt;sort time total (min, 
+med, max (stageId: taskId))&lt;br&gt;728 ms (1 ms, 2 ms, 54 ms (stage 
+13.0: task 55))&lt;br&gt;peak memory total (min, med, max (stageId: 
+taskId))&lt;br&gt;1200.0 MiB (6.0 MiB, 6.0 MiB, 6.0 MiB (stage 13.0: 
+task 55))&lt;br&gt;spill size total (min, med, max (stageId: 
+taskId))&lt;br&gt;0.0 B (0.0 B, 0.0 B, 0.0 B (stage 13.0: task 55))"];
+  }
+     
+  10 [labelType="html" 
+label="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records 
+written: 9,999,999&lt;br&gt;shuffle write time total (min, med, max 
+(stageId: taskId))&lt;br&gt;1.6 s (97 ms, 253 ms, 312 ms (stage 11.0: 
+task 40))&lt;br&gt;records read: 9,999,999&lt;br&gt;local bytes read 
+total (min, med, max (stageId: taskId))&lt;br&gt;52.0 MiB (262.4 KiB, 
+266.4 KiB, 270.1 KiB (stage 13.0: task 112))&lt;br&gt;fetch wait time 
+total (min, med, max (stageId: taskId))&lt;br&gt;0 ms (0 ms, 0 ms, 0 ms 
+(stage 13.0: task 55))&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local 
+blocks read: 1,400&lt;br&gt;remote blocks read: 0&lt;br&gt;data size 
+total (min, med, max (stageId: taskId))&lt;br&gt;152.6 MiB (21.8 MiB, 
+21.8 MiB, 21.8 MiB (stage 11.0: task 41))&lt;br&gt;remote bytes read to 
+disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max 
+(stageId: taskId))&lt;br&gt;52.0 MiB (7.4 MiB, 7.4 MiB, 7.4 MiB (stage 
+11.0: task 44))"];
+
+  subgraph cluster11 {
+    isCluster="true";
+    label="WholeStageCodegen (2)\n \nduration: total (min, med, max 
+(stageId: taskId))\n9.3 s (1.2 s, 1.3 s, 1.5 s (stage 11.0: task 39))";
+      12 [labelType="html" 
+label="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;"];
+  }
+     
+  13 [labelType="html" 
+label="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records 
+written: 9,999,999&lt;br&gt;shuffle write time total (min, med, max 
+(stageId: taskId))&lt;br&gt;563 ms (115 ms, 150 ms, 153 ms (stage 10.0: 
+task 32))&lt;br&gt;records read: 9,999,999&lt;br&gt;local bytes read 
+total (min, med, max (stageId: taskId))&lt;br&gt;49.4 MiB (7.1 MiB, 7.1 
+MiB, 7.1 MiB (stage 11.0: task 38))&lt;br&gt;fetch wait time total (min,
+ med, max (stageId: taskId))&lt;br&gt;0 ms (0 ms, 0 ms, 0 ms (stage 
+11.0: task 41))&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks 
+read: 28&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, 
+med, max (stageId: taskId))&lt;br&gt;152.6 MiB (38.1 MiB, 38.1 MiB, 38.1
+ MiB (stage 10.0: task 33))&lt;br&gt;remote bytes read to disk: 0.0 
+B&lt;br&gt;shuffle bytes written total (min, med, max (stageId: 
+taskId))&lt;br&gt;49.4 MiB (12.2 MiB, 12.3 MiB, 12.6 MiB (stage 10.0: 
+task 30))"];
+
+  subgraph cluster14 {
+    isCluster="true";
+    label="WholeStageCodegen (1)\n \nduration: total (min, med, max 
+(stageId: taskId))\n15.7 s (3.9 s, 3.9 s, 3.9 s (stage 10.0: task 31))";
+      15 [labelType="html" 
+label="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output 
+rows: 9,999,999"];
+  }
+     
+
+  subgraph cluster16 {
+    isCluster="true";
+    label="WholeStageCodegen (5)\n \nduration: total (min, med, max 
+(stageId: taskId))\n24.3 s (34 ms, 100 ms, 706 ms (stage 13.0: task 
+54))";
+      17 [labelType="html" 
+label="&lt;b&gt;Sort&lt;/b&gt;&lt;br&gt;&lt;br&gt;sort time total (min, 
+med, max (stageId: taskId))&lt;br&gt;530 ms (1 ms, 2 ms, 27 ms (stage 
+13.0: task 134))&lt;br&gt;peak memory total (min, med, max (stageId: 
+taskId))&lt;br&gt;1200.0 MiB (6.0 MiB, 6.0 MiB, 6.0 MiB (stage 13.0: 
+task 55))&lt;br&gt;spill size total (min, med, max (stageId: 
+taskId))&lt;br&gt;0.0 B (0.0 B, 0.0 B, 0.0 B (stage 13.0: task 55))"];
+  }
+     
+  18 [labelType="html" 
+label="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records 
+written: 10,000,000&lt;br&gt;shuffle write time total (min, med, max 
+(stageId: taskId))&lt;br&gt;1.1 s (59 ms, 116 ms, 238 ms (stage 12.0: 
+task 45))&lt;br&gt;records read: 10,000,000&lt;br&gt;local bytes read 
+total (min, med, max (stageId: taskId))&lt;br&gt;52.1 MiB (261.6 KiB, 
+266.9 KiB, 271.0 KiB (stage 13.0: task 243))&lt;br&gt;fetch wait time 
+total (min, med, max (stageId: taskId))&lt;br&gt;9 ms (0 ms, 0 ms, 9 ms 
+(stage 13.0: task 88))&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local 
+blocks read: 1,800&lt;br&gt;remote blocks read: 0&lt;br&gt;data size 
+total (min, med, max (stageId: taskId))&lt;br&gt;152.6 MiB (17.0 MiB, 
+17.0 MiB, 17.0 MiB (stage 12.0: task 45))&lt;br&gt;remote bytes read to 
+disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max 
+(stageId: taskId))&lt;br&gt;52.1 MiB (5.8 MiB, 5.8 MiB, 5.8 MiB (stage 
+12.0: task 46))"];
+  19 [labelType="html" 
+label="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records 
+written: 10,000,000&lt;br&gt;shuffle write time total (min, med, max 
+(stageId: taskId))&lt;br&gt;494 ms (104 ms, 127 ms, 140 ms (stage 9.0: 
+task 34))&lt;br&gt;records read: 10,000,000&lt;br&gt;local bytes read 
+total (min, med, max (stageId: taskId))&lt;br&gt;50.0 MiB (5.5 MiB, 5.6 
+MiB, 5.6 MiB (stage 12.0: task 48))&lt;br&gt;fetch wait time total (min,
+ med, max (stageId: taskId))&lt;br&gt;0 ms (0 ms, 0 ms, 0 ms (stage 
+12.0: task 45))&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks 
+read: 36&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, 
+med, max (stageId: taskId))&lt;br&gt;152.6 MiB (38.1 MiB, 38.1 MiB, 38.1
+ MiB (stage 9.0: task 36))&lt;br&gt;remote bytes read to disk: 0.0 
+B&lt;br&gt;shuffle bytes written total (min, med, max (stageId: 
+taskId))&lt;br&gt;50.0 MiB (12.3 MiB, 12.5 MiB, 12.7 MiB (stage 9.0: 
+task 34))"];
+
+  subgraph cluster20 {
+    isCluster="true";
+    label="WholeStageCodegen (4)\n \nduration: total (min, med, max 
+(stageId: taskId))\n7.7 s (1.9 s, 1.9 s, 2.0 s (stage 9.0: task 34))";
+      21 [labelType="html" 
+label="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output 
+rows: 10,000,000"];
+  }
+     
+  2-&gt;0;
+
+  3-&gt;2;
+
+  5-&gt;3;
+
+  6-&gt;5;
+
+  7-&gt;6;
+
+  9-&gt;7;
+
+  10-&gt;9;
+
+  12-&gt;10;
+
+  13-&gt;12;
+
+  15-&gt;13;
+
+  17-&gt;7;
+
+  18-&gt;17;
+
+  19-&gt;18;
+
+  21-&gt;19;
+
+}
+        </div>
+        <div id="plan-viz-metadata-size">22</div>
+        <div id="plan-meta-data-0">CollectLimit 21</div><div id="plan-meta-data-2">HashAggregate(keys=[], functions=[sum(id#42L)])</div><div id="plan-meta-data-1">WholeStageCodegen (7)</div><div id="plan-meta-data-3">Exchange SinglePartition, true, [id=#401]</div><div id="plan-meta-data-5">HashAggregate(keys=[], functions=[partial_sum(id#42L)])</div><div id="plan-meta-data-6">Project [id#42L]</div><div id="plan-meta-data-7">SortMergeJoin [id#42L], [id#36L], Inner</div><div id="plan-meta-data-4">WholeStageCodegen (6)</div><div id="plan-meta-data-9">Sort [id#42L ASC NULLS FIRST], false, 0</div><div id="plan-meta-data-8">WholeStageCodegen (3)</div><div id="plan-meta-data-10">Exchange hashpartitioning(id#42L, 200), true, [id=#385]</div><div id="plan-meta-data-12">Project [(id#34L * 3) AS id#42L]</div><div id="plan-meta-data-11">WholeStageCodegen (2)</div><div id="plan-meta-data-13">Exchange RoundRobinPartitioning(7), false, [id=#381]</div><div id="plan-meta-data-15">Range (1, 10000000, step=1, splits=4)</div><div id="plan-meta-data-14">WholeStageCodegen (1)</div><div id="plan-meta-data-17">Sort [id#36L ASC NULLS FIRST], false, 0</div><div id="plan-meta-data-16">WholeStageCodegen (5)</div><div id="plan-meta-data-18">Exchange hashpartitioning(id#36L, 200), true, [id=#392]</div><div id="plan-meta-data-19">Exchange RoundRobinPartitioning(9), false, [id=#391]</div><div id="plan-meta-data-21">Range (1, 20000000, step=2, splits=4)</div><div id="plan-meta-data-20">WholeStageCodegen (4)</div>
+      </div>
+      <link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%202_files/spark-sql-viz.css" type="text/css"><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/d3.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/dagre-d3.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/graphlib-dot.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%202_files/spark-sql-viz.js"></script>
+      <script>$(function() { if (shouldRenderPlanViz()) { renderPlanViz(); } })</script>
+    </div><div>
+      <span style="cursor: pointer;" onclick="clickPhysicalPlanDetails();">
+        <span id="physical-plan-details-arrow" class="arrow-open"></span>
+        <a>Details</a>
+      </span>
+    </div><div id="physical-plan-details" style="">
+      <pre>== Parsed Logical Plan ==
+GlobalLimit 21
++- LocalLimit 21
+   +- Project [cast(sum(id)#46L as string) AS sum(id)#51]
+      +- Aggregate [sum(id#42L) AS sum(id)#46L]
+         +- Project [id#42L]
+            +- Join Inner, (id#42L = id#36L)
+               :- Project [(id#34L * cast(3 as bigint)) AS id#42L]
+               :  +- Repartition 7, true
+               :     +- Range (1, 10000000, step=1, splits=Some(4))
+               +- Repartition 9, true
+                  +- Range (1, 20000000, step=2, splits=Some(4))
+
+== Analyzed Logical Plan ==
+sum(id): string
+GlobalLimit 21
++- LocalLimit 21
+   +- Project [cast(sum(id)#46L as string) AS sum(id)#51]
+      +- Aggregate [sum(id#42L) AS sum(id)#46L]
+         +- Project [id#42L]
+            +- Join Inner, (id#42L = id#36L)
+               :- Project [(id#34L * cast(3 as bigint)) AS id#42L]
+               :  +- Repartition 7, true
+               :     +- Range (1, 10000000, step=1, splits=Some(4))
+               +- Repartition 9, true
+                  +- Range (1, 20000000, step=2, splits=Some(4))
+
+== Optimized Logical Plan ==
+GlobalLimit 21
++- LocalLimit 21
+   +- Aggregate [cast(sum(id#42L) as string) AS sum(id)#51]
+      +- Project [id#42L]
+         +- Join Inner, (id#42L = id#36L)
+            :- Project [(id#34L * 3) AS id#42L]
+            :  +- Repartition 7, true
+            :     +- Range (1, 10000000, step=1, splits=Some(4))
+            +- Repartition 9, true
+               +- Range (1, 20000000, step=2, splits=Some(4))
+
+== Physical Plan ==
+CollectLimit 21
++- *(7) HashAggregate(keys=[], functions=[sum(id#42L)], output=[sum(id)#51])
+   +- Exchange SinglePartition, true, [id=#401]
+      +- *(6) HashAggregate(keys=[], functions=[partial_sum(id#42L)], output=[sum#49L])
+         +- *(6) Project [id#42L]
+            +- *(6) SortMergeJoin [id#42L], [id#36L], Inner
+               :- *(3) Sort [id#42L ASC NULLS FIRST], false, 0
+               :  +- Exchange hashpartitioning(id#42L, 200), true, [id=#385]
+               :     +- *(2) Project [(id#34L * 3) AS id#42L]
+               :        +- Exchange RoundRobinPartitioning(7), false, [id=#381]
+               :           +- *(1) Range (1, 10000000, step=1, splits=4)
+               +- *(5) Sort [id#36L ASC NULLS FIRST], false, 0
+                  +- Exchange hashpartitioning(id#36L, 200), true, [id=#392]
+                     +- Exchange RoundRobinPartitioning(9), false, [id=#391]
+                        +- *(4) Range (1, 20000000, step=2, splits=4)
+</pre>
+    </div><script>
+      function clickPhysicalPlanDetails() {
+        $('#physical-plan-details').toggle();
+        $('#physical-plan-details-arrow').toggleClass('arrow-open').toggleClass('arrow-closed');
+      }
+    </script><br>
+        </div>
+      
+    </body></html>

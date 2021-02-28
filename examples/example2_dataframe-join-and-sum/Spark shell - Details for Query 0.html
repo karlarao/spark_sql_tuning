@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%200_files/bootstrap.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%200_files/vis-timeline-graph2d.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%200_files/webui.css" type="text/css"><link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%200_files/timeline-view.css" type="text/css"><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/sorttable.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/jquery-3.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/vis-timeline-graph2d.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/bootstrap-tooltip.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/initialize-tooltips.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/table.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/timeline-view.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/log-view.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/webui.js"></script><script>setUIRoot('')</script>
+        <script>setAppBasePath('')</script>
+        
+        
+        <link rel="shortcut icon" href="Spark%20shell%20-%20Details%20for%20Query%200_files/spark-logo-77x50px-hd.png">
+        <title>Spark shell - Details for Query 0</title>
+      </head>
+      <body>
+        <div class="navbar navbar-static-top">
+          <div class="navbar-inner">
+            <div class="brand">
+              <a href="http://localhost:4040/" class="brand">
+                <img src="Spark%20shell%20-%20Details%20for%20Query%200_files/spark-logo-77x50px-hd.png">
+                <span class="version">3.0.1</span>
+              </a>
+            </div>
+            <p class="navbar-text pull-right">
+              <strong title="Spark shell">Spark shell</strong> application UI
+            </p>
+            <ul class="nav"><li class="">
+        <a href="http://localhost:4040/jobs/">Jobs</a>
+      </li><li class="">
+        <a href="http://localhost:4040/stages/">Stages</a>
+      </li><li class="">
+        <a href="http://localhost:4040/storage/">Storage</a>
+      </li><li class="">
+        <a href="http://localhost:4040/environment/">Environment</a>
+      </li><li class="">
+        <a href="http://localhost:4040/executors/">Executors</a>
+      </li><li class="active">
+        <a href="http://localhost:4040/SQL/">SQL</a>
+      </li></ul>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+              <h3 style="vertical-align: bottom; display: inline-block;">
+                Details for Query 0
+                
+              </h3>
+            </div>
+          </div>
+          <div>
+          <ul class="unstyled">
+            <li>
+              <strong>Submitted Time: </strong>2021/02/18 11:56:08
+            </li>
+            <li>
+              <strong>Duration: </strong>2 s
+            </li>
+            
+            <li>
+            <strong>Succeeded Jobs: </strong>
+            <a href="http://localhost:4040/jobs/job/?id=1">1</a><span>&nbsp;</span><a href="http://localhost:4040/jobs/job/?id=2">2</a><span>&nbsp;</span>
+          </li>
+            
+          </ul>
+        </div><div>
+          <input type="checkbox" id="stageId-and-taskId-checkbox" checked="checked">
+          <span>Show the Stage ID and Task ID that corresponds to the max metric</span>
+        </div><div>
+      <div id="plan-viz-graph"><svg viewBox="-21 -76.53199768066406 719.2416687011719 1624.531997680664" width="719.2416687011719" height="1624.531997680664"><g><g class="output"><g class="clusters"><g class="cluster_1 cluster" name="WholeStageCodegen (3)\n \nduration: 22 ms" style="opacity: 1;"><rect width="260" height="189.68799591064453" x="340.7416687011719" y="1225.3120040893555" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(650.3893375396729,1264.0000038146973)"><g transform="translate(-68.99166870117188,-19.343997955322266)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (3)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: 22 ms</tspan></text></g></g></g><g class="cluster_4 cluster" name="WholeStageCodegen (2)\n \nduration: total (min, med, max (stageId: taskId))\n244 ms (57 ms, 58 ms, 72 ms (stage 2.0: task 10))" style="opacity: 1;"><rect width="423" height="637.5319976806641" x="259.2416687011719" y="267.46800231933594" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(789.359001159668,318)"><g transform="translate(-132.38333129882812,-25.26599884033203)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (2)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: total (min, med, max <tspan class="stageId-and-taskId-metrics">(stageId: taskId)</tspan>)</tspan><tspan xml:space="preserve" dy="1em" x="1">244 ms (57 ms, 58 ms, 72 ms <tspan class="stageId-and-taskId-metrics">(stage 2.0: task 10)</tspan>)</tspan></text></g></g></g><g class="cluster_9 cluster" name="WholeStageCodegen (1)\n \nduration: total (min, med, max (stageId: taskId))\n65 ms (7 ms, 23 ms, 24 ms (stage 1.0: task 7))" style="opacity: 1;"><rect width="326.48333740234375" height="323.53199768066406" x="-5" y="-60.53199768066406" rx="5" ry="5"></rect><g class="label" text-anchor="end" transform="translate(421.8090057373047,-10)"><g transform="translate(-125.59166717529297,-25.26599884033203)"><text><tspan xml:space="preserve" dy="1em" x="1">WholeStageCodegen (1)</tspan><tspan xml:space="preserve" dy="1em" x="1"> </tspan><tspan xml:space="preserve" dy="1em" x="1">duration: total (min, med, max <tspan class="stageId-and-taskId-metrics">(stageId: taskId)</tspan>)</tspan><tspan xml:space="preserve" dy="1em" x="1">65 ms (7 ms, 23 ms, 24 ms <tspan class="stageId-and-taskId-metrics">(stage 1.0: task 7)</tspan>)</tspan></text></g></g></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M470.7416687011719,1375L470.7416687011718,1380.8333333333333C470.7416687011719,1386.6666666666665,470.7416687011719,1398.3333333333333,470.7416687011718,1410C470.7416687011719,1421.6666666666665,470.7416687011719,1433.3333333333333,470.7416687011718,1445C470.7416687011719,1456.6666666666665,470.7416687011719,1468.3333333333333,470.7416687011718,1474.1666666666667L470.7416687011719,1480" marker-end="url(#arrowhead100)" style="fill: none;"></path><defs><marker id="arrowhead100" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M470.7416687011719,1204L470.7416687011718,1209.8333333333333C470.7416687011719,1215.6666666666665,470.7416687011719,1227.3333333333333,470.7416687011718,1239C470.7416687011719,1250.6666666666665,470.7416687011719,1262.3333333333333,470.7416687011718,1274C470.7416687011719,1285.6666666666665,470.7416687011719,1297.3333333333333,470.7416687011718,1303.1666666666667L470.7416687011719,1309" marker-end="url(#arrowhead101)" style="fill: none;"></path><defs><marker id="arrowhead101" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M470.7416687011719,865L470.7416687011718,870.8333333333333C470.7416687011719,876.6666666666666,470.7416687011719,888.3333333333333,470.7416687011718,900C470.7416687011719,911.6666666666666,470.7416687011719,923.3333333333333,470.7416687011718,934.9999999999999C470.7416687011719,946.6666666666665,470.7416687011719,958.3333333333333,470.7416687011718,964.1666666666666L470.7416687011719,970" marker-end="url(#arrowhead102)" style="fill: none;"></path><defs><marker id="arrowhead102" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M470.7416687011719,715L470.7416687011718,720.8333333333333C470.7416687011719,726.6666666666666,470.7416687011719,738.3333333333333,470.7416687011718,750C470.7416687011719,761.6666666666666,470.7416687011719,773.3333333333333,470.7416687011718,779.1666666666665L470.7416687011719,785" marker-end="url(#arrowhead103)" style="fill: none;"></path><defs><marker id="arrowhead103" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M470.7416687011719,586L470.7416687011718,591.8333333333333C470.7416687011719,597.6666666666666,470.7416687011719,609.3333333333333,470.7416687011718,621C470.7416687011719,632.6666666666666,470.7416687011719,644.3333333333333,470.7416687011718,650.1666666666666L470.7416687011719,656" marker-end="url(#arrowhead104)" style="fill: none;"></path><defs><marker id="arrowhead104" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M229.24166870117188,436.5541619156214L253.95000203450516,445.7951349296845C278.6583353678385,455.0361079437476,328.0750020345052,473.51805397187377,361.21679790013826,488.5923603192702C394.35859376577133,503.66666666666663,411.2255188303708,515.3333333333333,419.65898136267054,521.1666666666666L428.0924438949703,527" marker-end="url(#arrowhead105)" style="fill: none;"></path><defs><marker id="arrowhead105" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M158.24166870117188,223L158.24166870117188,228.83333333333331C158.24166870117188,234.66666666666666,158.24166870117188,246.33333333333331,158.24166870117188,258C158.24166870117188,269.66666666666663,158.24166870117188,281.3333333333333,158.24166870117188,293C158.24166870117188,304.66666666666663,158.24166870117188,316.3333333333333,158.24166870117188,328C158.24166870117188,339.66666666666663,158.24166870117188,351.3333333333333,158.24166870117188,357.1666666666667L158.24166870117188,363" marker-end="url(#arrowhead106)" style="fill: none;"></path><defs><marker id="arrowhead106" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M158.24166870117188,94L158.24166870117188,99.83333333333333C158.24166870117188,105.66666666666666,158.24166870117188,117.33333333333333,158.24166870117188,129C158.24166870117188,140.66666666666666,158.24166870117188,152.33333333333331,158.24166870117188,158.16666666666666L158.24166870117188,164" marker-end="url(#arrowhead107)" style="fill: none;"></path><defs><marker id="arrowhead107" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M490.81666564941406,439.5L490.816665649414,448.25C490.81666564941406,457,490.81666564941406,474.5,489.0010974499606,489.0833333333333C487.1855292505072,503.66666666666663,483.55439285160037,515.3333333333333,481.7388246521469,521.1666666666666L479.9232564526935,527" marker-end="url(#arrowhead108)" style="fill: none;"></path><defs><marker id="arrowhead108" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="stroke-width: 1px; stroke-dasharray: 1px, 0px;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g><g class="edgeLabel" style="opacity: 1;" transform=""><g transform="translate(0,0)" class="label"><text><tspan xml:space="preserve" dy="1em" x="1"></tspan></text></g></g></g><g class="nodes"><g class="node_0 node" name="&lt;br&gt;&lt;b&gt;CollectLimit&lt;/b&gt;&lt;br&gt;&lt;br&gt;" style="opacity: 1;" transform="translate(470.7416687011719,1506)" data-original-title="" title=""><rect rx="5" ry="5" x="-39" y="-26" width="78" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-34,-21)"><foreignObject width="68" height="42"><div style="display: inline-block; white-space: nowrap;"><br><b>CollectLimit</b><br><br></div></foreignObject></g></g></g><g class="node_2 node" name="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;time in aggregation build: 22 ms&lt;br&gt;number of output rows: 1" style="opacity: 1;" transform="translate(470.7416687011719,1342)"><rect rx="5" ry="5" x="-90" y="-33" width="180" height="66"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-85,-28)"><foreignObject width="170" height="56"><div style="display: inline-block; white-space: nowrap;"><b>HashAggregate</b><br><br>time in aggregation build: 22 ms<br>number of output rows: 1</div></foreignObject></g></g><g></g></g><g class="node_3 node" name="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records written: 4&lt;br&gt;shuffle write time total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;138 ms (30 ms, 35 ms, 39 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 2.0: task 9)&lt;/span&gt;)&lt;br&gt;records read: 4&lt;br&gt;local bytes read: 236.0 B&lt;br&gt;fetch wait time: 0 ms&lt;br&gt;remote bytes read: 0.0 B&lt;br&gt;local blocks read: 4&lt;br&gt;remote blocks read: 0&lt;br&gt;data size total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;64.0 B (16.0 B, 16.0 B, 16.0 B &lt;span class='stageId-and-taskId-metrics'&gt;(stage 2.0: task 10)&lt;/span&gt;)&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes written total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;236.0 B (59.0 B, 59.0 B, 59.0 B &lt;span class='stageId-and-taskId-metrics'&gt;(stage 2.0: task 10)&lt;/span&gt;)" style="opacity: 1;" transform="translate(470.7416687011719,1087)"><rect rx="5" ry="5" x="-159.5" y="-117" width="319" height="234"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-154.5,-112)"><foreignObject width="309" height="224"><div style="display: inline-block; white-space: nowrap;"><b>Exchange</b><br><br>shuffle records written: 4<br>shuffle write time total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>138 ms (30 ms, 35 ms, 39 ms <span class="stageId-and-taskId-metrics">(stage 2.0: task 9)</span>)<br>records read: 4<br>local bytes read: 236.0 B<br>fetch wait time: 0 ms<br>remote bytes read: 0.0 B<br>local blocks read: 4<br>remote blocks read: 0<br>data size total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>64.0 B (16.0 B, 16.0 B, 16.0 B <span class="stageId-and-taskId-metrics">(stage 2.0: task 10)</span>)<br>remote bytes read to disk: 0.0 B<br>shuffle bytes written total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>236.0 B (59.0 B, 59.0 B, 59.0 B <span class="stageId-and-taskId-metrics">(stage 2.0: task 10)</span>)</div></foreignObject></g></g></g><g class="node_5 node" name="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;time in aggregation build total (min, med, max &lt;span class='stageId-and-taskId-metrics'&gt;(stageId: taskId)&lt;/span&gt;)&lt;br&gt;11 ms (0 ms, 1 ms, 10 ms &lt;span class='stageId-and-taskId-metrics'&gt;(stage 2.0: task 11)&lt;/span&gt;)&lt;br&gt;number of output rows: 4" style="opacity: 1;" transform="translate(470.7416687011719,825)"><rect rx="5" ry="5" x="-171.5" y="-40" width="343" height="80"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-166.5,-35)"><foreignObject width="333" height="70"><div style="display: inline-block; white-space: nowrap;"><b>HashAggregate</b><br><br>time in aggregation build total (min, med, max <span class="stageId-and-taskId-metrics">(stageId: taskId)</span>)<br>11 ms (0 ms, 1 ms, 10 ms <span class="stageId-and-taskId-metrics">(stage 2.0: task 11)</span>)<br>number of output rows: 4</div></foreignObject></g></g><g></g></g><g class="node_6 node" name="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;" style="opacity: 1;" transform="translate(470.7416687011719,685.5)"><rect rx="5" ry="5" x="-25.5" y="-26" width="51" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-20.5,-21)"><foreignObject width="41" height="42"><div style="display: inline-block; white-space: nowrap;"><br><b>Project</b><br><br></div></foreignObject></g></g><g></g></g><g class="node_7 node" name="&lt;b&gt;BroadcastHashJoin&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output rows: 500" style="opacity: 1;" transform="translate(470.7416687011719,556.5)" data-original-title="" title=""><rect rx="5" ry="5" x="-78.5" y="-26" width="157" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-73.5,-21)"><foreignObject width="147" height="42"><div style="display: inline-block; white-space: nowrap;"><b>BroadcastHashJoin</b><br><br>number of output rows: 500</div></foreignObject></g></g><g></g></g><g class="node_8 node" name="&lt;b&gt;BroadcastExchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;data size: 1056.0 KiB&lt;br&gt;time to collect: 989 ms&lt;br&gt;time to build: 104 ms&lt;br&gt;time to broadcast: 22 ms" style="opacity: 1;" transform="translate(158.24166870117188,410)"><rect rx="5" ry="5" x="-71" y="-47" width="142" height="94"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-66,-42)"><foreignObject width="132" height="84"><div style="display: inline-block; white-space: nowrap;"><b>BroadcastExchange</b><br><br>data size: 1056.0 KiB<br>time to collect: 989 ms<br>time to build: 104 ms<br>time to broadcast: 22 ms</div></foreignObject></g></g></g><g class="node_10 node" name="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;" style="opacity: 1;" transform="translate(158.24166870117188,193.5)"><rect rx="5" ry="5" x="-25.5" y="-26" width="51" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-20.5,-21)"><foreignObject width="41" height="42"><div style="display: inline-block; white-space: nowrap;"><br><b>Project</b><br><br></div></foreignObject></g></g><g></g></g><g class="node_11 node" name="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output rows: 999" style="opacity: 1;" transform="translate(158.24166870117188,64.5)"><rect rx="5" ry="5" x="-78.5" y="-26" width="157" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-73.5,-21)"><foreignObject width="147" height="42"><div style="display: inline-block; white-space: nowrap;"><b>Range</b><br><br>number of output rows: 999</div></foreignObject></g></g><g></g></g><g class="node_12 node" name="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output rows: 2,500" style="opacity: 1;" transform="translate(490.81666564941406,410)"><rect rx="5" ry="5" x="-83.5" y="-26" width="167" height="52"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-78.5,-21)"><foreignObject width="157" height="42"><div style="display: inline-block; white-space: nowrap;"><b>Range</b><br><br>number of output rows: 2,500</div></foreignObject></g></g><g></g></g></g></g></g></svg></div>
+      <div id="plan-viz-metadata" style="display:none">
+        <div class="dot-file">
+          digraph G {
+  0 [labelType="html" 
+label="&lt;br&gt;&lt;b&gt;CollectLimit&lt;/b&gt;&lt;br&gt;&lt;br&gt;"];
+
+  subgraph cluster1 {
+    isCluster="true";
+    label="WholeStageCodegen (3)\n \nduration: 22 ms";
+      2 [labelType="html" 
+label="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;time in 
+aggregation build: 22 ms&lt;br&gt;number of output rows: 1"];
+  }
+     
+  3 [labelType="html" 
+label="&lt;b&gt;Exchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;shuffle records 
+written: 4&lt;br&gt;shuffle write time total (min, med, max (stageId: 
+taskId))&lt;br&gt;138 ms (30 ms, 35 ms, 39 ms (stage 2.0: task 
+9))&lt;br&gt;records read: 4&lt;br&gt;local bytes read: 236.0 
+B&lt;br&gt;fetch wait time: 0 ms&lt;br&gt;remote bytes read: 0.0 
+B&lt;br&gt;local blocks read: 4&lt;br&gt;remote blocks read: 
+0&lt;br&gt;data size total (min, med, max (stageId: 
+taskId))&lt;br&gt;64.0 B (16.0 B, 16.0 B, 16.0 B (stage 2.0: task 
+10))&lt;br&gt;remote bytes read to disk: 0.0 B&lt;br&gt;shuffle bytes 
+written total (min, med, max (stageId: taskId))&lt;br&gt;236.0 B (59.0 
+B, 59.0 B, 59.0 B (stage 2.0: task 10))"];
+
+  subgraph cluster4 {
+    isCluster="true";
+    label="WholeStageCodegen (2)\n \nduration: total (min, med, max 
+(stageId: taskId))\n244 ms (57 ms, 58 ms, 72 ms (stage 2.0: task 10))";
+      5 [labelType="html" 
+label="&lt;b&gt;HashAggregate&lt;/b&gt;&lt;br&gt;&lt;br&gt;time in 
+aggregation build total (min, med, max (stageId: taskId))&lt;br&gt;11 ms
+ (0 ms, 1 ms, 10 ms (stage 2.0: task 11))&lt;br&gt;number of output 
+rows: 4"];    
+  6 [labelType="html" 
+label="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;"];    
+  7 [labelType="html" 
+label="&lt;b&gt;BroadcastHashJoin&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of
+ output rows: 500"];    
+  12 [labelType="html" 
+label="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output 
+rows: 2,500"];
+  }
+     
+  8 [labelType="html" 
+label="&lt;b&gt;BroadcastExchange&lt;/b&gt;&lt;br&gt;&lt;br&gt;data 
+size: 1056.0 KiB&lt;br&gt;time to collect: 989 ms&lt;br&gt;time to 
+build: 104 ms&lt;br&gt;time to broadcast: 22 ms"];
+
+  subgraph cluster9 {
+    isCluster="true";
+    label="WholeStageCodegen (1)\n \nduration: total (min, med, max 
+(stageId: taskId))\n65 ms (7 ms, 23 ms, 24 ms (stage 1.0: task 7))";
+      10 [labelType="html" 
+label="&lt;br&gt;&lt;b&gt;Project&lt;/b&gt;&lt;br&gt;&lt;br&gt;"];    
+  11 [labelType="html" 
+label="&lt;b&gt;Range&lt;/b&gt;&lt;br&gt;&lt;br&gt;number of output 
+rows: 999"];
+  }
+     
+  2-&gt;0;
+
+  3-&gt;2;
+
+  5-&gt;3;
+
+  6-&gt;5;
+
+  7-&gt;6;
+
+  8-&gt;7;
+
+  10-&gt;8;
+
+  11-&gt;10;
+
+  12-&gt;7;
+
+}
+        </div>
+        <div id="plan-viz-metadata-size">13</div>
+        <div id="plan-meta-data-0">CollectLimit 21</div><div id="plan-meta-data-2">HashAggregate(keys=[], functions=[sum(id#2L)])</div><div id="plan-meta-data-1">WholeStageCodegen (3)</div><div id="plan-meta-data-3">Exchange SinglePartition, true, [id=#149]</div><div id="plan-meta-data-5">HashAggregate(keys=[], functions=[partial_sum(id#2L)])</div><div id="plan-meta-data-6">Project [id#2L]</div><div id="plan-meta-data-7">BroadcastHashJoin [id#2L], [id#6L], Inner, BuildLeft</div><div id="plan-meta-data-12">Range (1, 5000, step=2, splits=4)</div><div id="plan-meta-data-4">WholeStageCodegen (2)</div><div id="plan-meta-data-8">BroadcastExchange HashedRelationBroadcastMode(List(input[0, bigint, false])), [id=#143]</div><div id="plan-meta-data-10">Project [(id#0L * 5) AS id#2L]</div><div id="plan-meta-data-11">Range (1, 1000, step=1, splits=4)</div><div id="plan-meta-data-9">WholeStageCodegen (1)</div>
+      </div>
+      <link rel="stylesheet" href="Spark%20shell%20-%20Details%20for%20Query%200_files/spark-sql-viz.css" type="text/css"><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/d3.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/dagre-d3.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/graphlib-dot.js"></script><script src="Spark%20shell%20-%20Details%20for%20Query%200_files/spark-sql-viz.js"></script>
+      <script>$(function() { if (shouldRenderPlanViz()) { renderPlanViz(); } })</script>
+    </div><div>
+      <span style="cursor: pointer;" onclick="clickPhysicalPlanDetails();">
+        <span id="physical-plan-details-arrow" class="arrow-open"></span>
+        <a>Details</a>
+      </span>
+    </div><div id="physical-plan-details" style="">
+      <pre>== Parsed Logical Plan ==
+GlobalLimit 21
++- LocalLimit 21
+   +- Project [cast(sum(id)#20L as string) AS sum(id)#23]
+      +- Aggregate [sum(id#2L) AS sum(id)#20L]
+         +- Project [id#2L]
+            +- Join Inner, (id#2L = id#6L)
+               :- Project [(id#0L * cast(5 as bigint)) AS id#2L]
+               :  +- Range (1, 1000, step=1, splits=Some(4))
+               +- Range (1, 5000, step=2, splits=Some(4))
+
+== Analyzed Logical Plan ==
+sum(id): string
+GlobalLimit 21
++- LocalLimit 21
+   +- Project [cast(sum(id)#20L as string) AS sum(id)#23]
+      +- Aggregate [sum(id#2L) AS sum(id)#20L]
+         +- Project [id#2L]
+            +- Join Inner, (id#2L = id#6L)
+               :- Project [(id#0L * cast(5 as bigint)) AS id#2L]
+               :  +- Range (1, 1000, step=1, splits=Some(4))
+               +- Range (1, 5000, step=2, splits=Some(4))
+
+== Optimized Logical Plan ==
+GlobalLimit 21
++- LocalLimit 21
+   +- Aggregate [cast(sum(id#2L) as string) AS sum(id)#23]
+      +- Project [id#2L]
+         +- Join Inner, (id#2L = id#6L)
+            :- Project [(id#0L * 5) AS id#2L]
+            :  +- Range (1, 1000, step=1, splits=Some(4))
+            +- Range (1, 5000, step=2, splits=Some(4))
+
+== Physical Plan ==
+CollectLimit 21
++- *(3) HashAggregate(keys=[], functions=[sum(id#2L)], output=[sum(id)#23])
+   +- Exchange SinglePartition, true, [id=#149]
+      +- *(2) HashAggregate(keys=[], functions=[partial_sum(id#2L)], output=[sum#26L])
+         +- *(2) Project [id#2L]
+            +- *(2) BroadcastHashJoin [id#2L], [id#6L], Inner, BuildLeft
+               :- BroadcastExchange HashedRelationBroadcastMode(List(input[0, bigint, false])), [id=#143]
+               :  +- *(1) Project [(id#0L * 5) AS id#2L]
+               :     +- *(1) Range (1, 1000, step=1, splits=4)
+               +- *(2) Range (1, 5000, step=2, splits=4)
+</pre>
+    </div><script>
+      function clickPhysicalPlanDetails() {
+        $('#physical-plan-details').toggle();
+        $('#physical-plan-details-arrow').toggleClass('arrow-open').toggleClass('arrow-closed');
+      }
+    </script><br>
+        </div>
+      
+    </body></html>
