@@ -49,6 +49,36 @@ Below is the workflow to know where the time is being spent
 
 
 
+## General things to check on Spark code tuning: 
+* code logic
+* join mechanics
+* broadcast joins
+* column pruning
+* prepartitioning
+* bucketing
+* skewed joins
+* rdd joins
+* cogroup
+* rdd broadcast
+* rdd skews
+* rdd transformations
+* by key ops
+* reusing objects
+* transformations
+
+## General things to check on Spark configuration tuning: 
+* cluster hardware config and parameters
+* catalyst
+* tungsten
+* caching
+* checkpointing
+* repartition coalesce
+* partitioning problems
+* partitioners
+* data skews
+* serialization problems
+* kryo
+
 
 
 ### DAG correlation screenshots
@@ -62,7 +92,20 @@ Below is the workflow to know where the time is being spent
 
 
 ### Doc Index
+* (https://github.com/karlarao/spark_sql_tuning/blob/main/HOWTO-spark_explain_plan-and_spark_ui.docx)
 <img width="330" alt="Screen Shot 2021-02-26 at 9 13 25 PM" src="https://user-images.githubusercontent.com/3683046/109372472-bfd85800-7877-11eb-817f-5f6a8dd1b419.png">
 <img width="330" alt="Screen Shot 2021-02-26 at 9 13 38 PM" src="https://user-images.githubusercontent.com/3683046/109372470-bea72b00-7877-11eb-8fd8-633aec24a6fc.png">
+
+
+
+
+
+## Other resources
+* Spark Summit talk [Understanding query plans and Spark UI](https://databricks.com/session/understanding-query-plans-and-spark-uis) (Xiao Li - Databricks) 
+    * Shows tips and tricks on where to look and click and general summary of things to do if such issues happen
+    * Screenshots of key slides here https://github.com/karlarao/spark_sql_tuning/blob/main/Spark3_navigating_webui_tips.md
+* Apache Spark Core Deep Dive - Proper Optimization (Daniel Tomes - Databricks) https://www.youtube.com/watch?v=daXEp4HmS-E
+    * The speaker demonstrated a general troubleshooting workflow using the new Spark UI 
+
 
 
