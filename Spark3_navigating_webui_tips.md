@@ -1,3 +1,10 @@
+* Spark Summit talk [Understanding query plans and Spark UI](https://databricks.com/session/understanding-query-plans-and-spark-uis) (Xiao Li - Databricks) 
+    * Shows tips and tricks on where to look and click and general summary of things to do if such issues happen
+    * Screenshots of key slides here https://github.com/karlarao/spark_sql_tuning/blob/main/Spark3_navigating_webui_tips.md
+* Apache Spark Core Deep Dive - Proper Optimization (Daniel Tomes - Databricks) https://www.youtube.com/watch?v=daXEp4HmS-E
+    * The speaker demonstrated a general troubleshooting workflow using the new Spark UI 
+
+
 <img width="916" alt="Screen Shot 2021-02-26 at 10 31 34 PM-newinspark3" src="https://user-images.githubusercontent.com/3683046/109434464-815fac00-79e3-11eb-8511-97b324bf5c58.png">
 <img width="918" alt="Screen Shot 2021-02-26 at 10 32 40 PM" src="https://user-images.githubusercontent.com/3683046/109434471-8b81aa80-79e3-11eb-9919-1afc6220e7b5.png">
 <img width="918" alt="Screen Shot 2021-02-26 at 10 33 08 PM" src="https://user-images.githubusercontent.com/3683046/109434488-98060300-79e3-11eb-95e8-026c88a2939d.png">
