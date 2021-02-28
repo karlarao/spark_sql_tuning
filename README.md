@@ -1,5 +1,5 @@
 # spark_sql_tuning
-set of tools for spark sql tuning/troubleshooting
+notes/tools for spark sql tuning/troubleshooting
 
 
 ## Understanding the spark explain plan and spark UI
